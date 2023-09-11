@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+}
+
+#section-1 {
+    background: rgb(80, 148, 209);
+    background: linear-gradient(0deg, rgba(80, 148, 209, 1) 0%, rgba(137, 186, 221, 1) 100%);
+}
+
+button {
+    font-family: 'Prompt', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.round-button {
+    border-radius: 20px;
+    padding: 1rem;
+    border: 0;
+    margin: 1rem;
+    text-decoration: none;
+    background: #fff3;
+    color: white;
+}
