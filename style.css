@@ -71,3 +71,17 @@ a {
     height: 50%;
     width: 50%;
 }
+
+.scrolling-text {
+    max-height: 150px;
+    background: white;
+    color: orange;
+    font-size: 4rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.very-high-padding {
+    padding: 20% 0 20% 0;
+}
