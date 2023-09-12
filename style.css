@@ -6,11 +6,14 @@
 body {
     text-align: center;
     font-family: 'Prompt', sans-serif;
+    background: rgb(80, 148, 209);
+    background: linear-gradient(0deg, rgba(80, 148, 209, 1) 0%, rgba(137, 186, 221, 1) 100%);
+    min-height: 100vh;
 }
 
 #section-1 {
-    background: rgb(80, 148, 209);
-    background: linear-gradient(0deg, rgba(80, 148, 209, 1) 0%, rgba(137, 186, 221, 1) 100%);
+    height: 100vh;
+    width: 90vw;
 }
 
 button {
@@ -56,4 +59,15 @@ a {
 #go-to-transport-sect {
     background: rgb(61, 75, 88);
     background: linear-gradient(180deg, rgba(61, 75, 88, 1) 0%, rgba(32, 34, 37, 1) 100%);
+}
+
+#cloud-1 {
+    position: absolute;
+    height: 20px;
+    top: 10%;
+}
+
+#main-icon {
+    height: 50%;
+    width: 50%;
 }
