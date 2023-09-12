@@ -26,4 +26,29 @@ a {
     text-decoration: none;
     background: #fff3;
     color: white;
+    box-shadow: 5px 5px #0003 rgb(3 3 3 / 0.2);
+}
+
+#places-sect {
+    background: #d9d9d9;
+}
+
+#running-number-sect {
+    background: rgb(156, 164, 173);
+    background: linear-gradient(0deg, rgba(156, 164, 173, 1) 0%, rgba(51, 65, 75, 0.89) 100%);
+}
+
+#graph-sect {
+    background: rgb(155, 162, 170);
+    background: linear-gradient(180deg, rgba(155, 162, 170, 1) 0%, rgba(140, 141, 143, 1) 100%);
+}
+
+#personal-car-sect {
+    background: rgb(140, 142, 144);
+    background: linear-gradient(180deg, rgba(140, 142, 144, 1) 0%, rgba(60, 75, 88, 1) 100%);
+}
+
+#go-to-transport-sect {
+    background: rgb(61, 75, 88);
+    background: linear-gradient(180deg, rgba(61, 75, 88, 1) 0%, rgba(32, 34, 37, 1) 100%);
 }
