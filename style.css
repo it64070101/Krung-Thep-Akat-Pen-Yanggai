@@ -9,6 +9,14 @@ body {
     background: rgb(80, 148, 209);
     background: linear-gradient(0deg, rgba(80, 148, 209, 1) 0%, rgba(137, 186, 221, 1) 100%);
     min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: auto;
+    background: navy;
+    max-width: 1200px;
 }
 
 #section-1 {
