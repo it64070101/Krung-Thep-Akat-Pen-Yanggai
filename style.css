@@ -15,7 +15,7 @@ body {
 
 .container {
     margin: auto;
-    background: navy;
+    /* background: navy; */
     max-width: 1200px;
 }
 
@@ -38,11 +38,54 @@ a {
     border-radius: 20px;
     padding: 1rem;
     border: 0;
-    margin: 1rem;
+    margin: 2rem;
     text-decoration: none;
     background: #fff3;
     color: white;
-    box-shadow: 5px 5px #0003 rgb(3 3 3 / 0.2);
+    box-shadow: 5px 5px #0003;
+}
+
+
+
+.scrolling-text {
+    max-height: 150px;
+    background: white;
+    color: orange;
+    font-size: 4rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.very-high-padding {
+    padding: 20% 0 20% 0;
+}
+
+.weather-svg {
+    height: 600px;
+}
+
+.center {
+    margin: auto;
+}
+
+#logo-sect {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#weather-sect {
+    margin: auto;
+    background-image: url("/images/svgs/weather-rain.svg");
+    background-size: cover;
+    overflow-x: hidden;
+    max-width: 600px;
+    max-height: 600px;
+    min-width: 600px;
+    min-height: 600px;
+    animation: weather-scroll-animation 8s infinite;
+    /* background: blueviolet; */
 }
 
 #places-sect {
@@ -80,16 +123,28 @@ a {
     width: 50%;
 }
 
-.scrolling-text {
-    max-height: 150px;
-    background: white;
-    color: orange;
-    font-size: 4rem;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
+@keyframes weather-scroll-animation {
+    0% {
+        background-image: url("/images/svgs/weather-rain.svg");
+    }
 
-.very-high-padding {
-    padding: 20% 0 20% 0;
+    20% {
+        background-image: url("/images/svgs/weather-smog.svg");
+    }
+
+    40% {
+        background-image: url("/images/svgs/weather-smoke.svg");
+    }
+
+    60% {
+        background-image: url("/images/svgs/weather-sunsmog.svg");
+    }
+
+    80% {
+        background-image: url("/images/svgs/weather-cloud.svg");
+    }
+
+    100% {
+        background-image: url("/images/svgs/weather-rain.svg");
+    }
 }
