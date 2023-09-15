@@ -6,22 +6,10 @@
 body {
     text-align: center;
     font-family: 'Prompt', sans-serif;
-    background: rgb(80, 148, 209);
-    background: linear-gradient(0deg, rgba(80, 148, 209, 1) 0%, rgba(137, 186, 221, 1) 100%);
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-}
-
-.container {
-    margin: auto;
-    /* background: navy; */
-    max-width: 1200px;
-}
-
-#section-1 {
-    height: 100vh;
-    width: 90vw;
+    overflow-y: visible;
 }
 
 button {
@@ -32,6 +20,14 @@ a {
     text-decoration: none;
     color: white;
     font-size: 1rem;
+}
+
+/* Class ---------------------------------------------------------------------------------------------------- */
+
+.container {
+    margin: auto;
+    /* background: navy; */
+    max-width: 1200px;
 }
 
 .round-button {
@@ -69,6 +65,38 @@ a {
     margin: auto;
 }
 
+.svg-button {
+    vertical-align: middle;
+}
+
+.full-page-height {
+    min-height: 100vh;
+}
+
+/* ID ---------------------------------------------------------------------------------------------------- */
+
+#background-1 {
+    background: rgb(80, 148, 209);
+    background: linear-gradient(0deg, rgba(80, 148, 209, 1) 0%, rgba(137, 186, 221, 1) 100%);
+}
+
+#background-2 {
+    background: #d9d9d9;
+}
+
+#dust-sect {
+    background: #fff;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 2;
+    min-width: 100vw;
+}
+
+#section-1 {
+    height: 100vh;
+    width: 90vw;
+}
+
 #logo-sect {
     min-height: 100vh;
     display: flex;
@@ -84,12 +112,14 @@ a {
     max-height: 600px;
     min-width: 600px;
     min-height: 600px;
-    animation: weather-scroll-animation 8s infinite;
+    animation: weather-scroll-animation 10s infinite;
     /* background: blueviolet; */
 }
 
 #places-sect {
     background: #d9d9d9;
+    display: grid;
+    grid-template-columns: 20% 80%;
 }
 
 #running-number-sect {
@@ -122,6 +152,13 @@ a {
     height: 50%;
     width: 50%;
 }
+
+#four-places-svg {
+    height: 25%;
+    margin: 25%;
+}
+
+/* Keyframes ---------------------------------------------------------------------------------------------------- */
 
 @keyframes weather-scroll-animation {
     0% {
