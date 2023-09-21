@@ -179,6 +179,40 @@ a {
 #graph-sect {
     background: rgb(155, 162, 170);
     background: linear-gradient(180deg, rgba(155, 162, 170, 1) 0%, rgba(140, 141, 143, 1) 100%);
+    display: grid;
+    grid-template-rows: 1 1;
+}
+
+#graph-sect-top {
+    background-color: rgba(235, 235, 235, 1);
+    padding: 1.5em;
+}
+
+#graph-sect-bottom {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+#graph-sect-bottom-1 {
+    background-color: rgba(253, 62, 0, 1);
+}
+
+#graph-sect-bottom-2 {
+    background-color: rgba(190, 190, 190, 1);
+    padding-left: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: left;
+    gap: 2rem;
+}
+
+#graph-sect-bottom-2-pic img{
+    /* background-image: url("images/images/Factory.png");
+    bac */
+    height: 10em;
+    width: auto;
 }
 
 #personal-car-sect {
