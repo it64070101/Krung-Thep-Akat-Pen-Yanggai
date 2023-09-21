@@ -112,7 +112,7 @@ a {
 
 #background-1 {
     height: 2203px;
-    background-image: url("/images/images/Desktop2.png");
+    background-image: url("images/images/Desktop2.png");
     background-size: cover;
     /* background: rgb(80, 148, 209); */
     /* background: linear-gradient(0deg, rgba(80, 148, 209, 1) 0%, rgba(137, 186, 221, 1) 100%); */
