@@ -30,20 +30,20 @@ a {
     /* background: navy; */
     max-width: 1200px;
 }
-.main-grid-page-1{
+
+.main-grid-page-1 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 10px;
     justify-content: center;
 }
+
 .round-button {
-    /* position: absolute; */
-    /* z-index: 2; */
     border-radius: 20px;
     padding: 1rem;
     border: 0;
-    margin: 2rem;
+    margin: 4rem;
     text-decoration: none;
     background: #fff3;
     color: white;
@@ -111,9 +111,11 @@ a {
 /* ID ---------------------------------------------------------------------------------------------------- */
 
 #background-1 {
-    height: 100%;
-    background: rgb(80, 148, 209);
-    background: linear-gradient(0deg, rgba(80, 148, 209, 1) 0%, rgba(137, 186, 221, 1) 100%);
+    height: 2203px;
+    background-image: url("/images/images/Desktop2.png");
+    background-size: cover;
+    /* background: rgb(80, 148, 209); */
+    /* background: linear-gradient(0deg, rgba(80, 148, 209, 1) 0%, rgba(137, 186, 221, 1) 100%); */
 }
 
 #background-2 {
@@ -140,20 +142,21 @@ a {
     flex-direction: column;
 }
 
-#weather-sect {
-    margin: auto;
-    /* background-image: url("/images/svgs/weather-rain.svg"); */
+#weather-container {
+    margin-top: 70%;
     background-size: cover;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    max-width: 600px;
-    /* max-height: 600px; */
-    min-width: 600px;
+    overflow: hidden;
+    width: 600px;
     min-height: 600px;
-    /* overflow: auto; */
     white-space: nowrap;
-    /* background: blueviolet; */
 }
+
+#weather-sect {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 
 #places-sect {
     background: #d9d9d9;
@@ -208,7 +211,8 @@ a {
 
 #fade-cloud-1 img {
     position: relative;
-    top: -25rem; /* You may need to adjust this for proper positioning */
+    top: -25rem;
+    /* You may need to adjust this for proper positioning */
 }
 
 #fade-cloud-2 {
@@ -218,7 +222,8 @@ a {
 
 #fade-cloud-2 img {
     position: relative;
-    left: -50rem; /* You may need to adjust this for proper positioning */
+    left: -50rem;
+    /* You may need to adjust this for proper positioning */
 }
 
 #fade-cloud-3 {
@@ -226,9 +231,11 @@ a {
     width: 100%;
     overflow: hidden;
 }
+
 #fade-cloud-3 img {
     position: relative;
-    left: 30rem; /* You may need to adjust this for proper positioning */
+    left: 30rem;
+    /* You may need to adjust this for proper positioning */
 }
 
 #fade-cloud-4 {
