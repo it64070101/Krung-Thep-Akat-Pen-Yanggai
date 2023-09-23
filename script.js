@@ -18,3 +18,14 @@ function scrollToTop() {
     window.scrollTo(0, 0);
     console.log("yes")
 }
+
+document.addEventListener("scroll", setBodyScrollPosition);
+
+function setBodyScrollPosition() {
+    document.body.dataset.y = window.scrollY
+    if (document.body.dataset.y <= 600) {
+        document.querySelector('.svg.car').style.setProperty('--position', document.body.dataset.y)
+    }
+
+    // console.log(document.body.dataset.y)
+}
