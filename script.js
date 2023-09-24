@@ -8,6 +8,7 @@ function disableDust() {
     document.querySelector('#dust-sect').style.setProperty('animation-delay', '5s')
     document.querySelector('#dust-sect').style.setProperty('animation-fill-mode', 'forwards')
     document.querySelector('body').style.overflowY = 'visible';
+    document.querySelector('#dust-guide').style.display = 'none';
 }
 
 function setOverflowHidden() {
@@ -23,7 +24,7 @@ document.addEventListener("scroll", setBodyScrollPosition);
 
 function setBodyScrollPosition() {
     document.body.dataset.y = window.scrollY
-    if (document.body.dataset.y <= 600) {
+    if (document.body.dataset.y <= 350) {
         document.querySelector('.svg.car').style.setProperty('--position', document.body.dataset.y)
     }
 

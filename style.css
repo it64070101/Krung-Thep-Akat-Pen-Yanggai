@@ -1,4 +1,5 @@
 * {
+    --seesad: #fd3e00;
     margin: 0;
     padding: 0;
 }
@@ -15,6 +16,10 @@ body {
 
 button {
     font-family: 'Prompt', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 a {
@@ -52,14 +57,18 @@ a {
 
 
 
-.scrolling-text {
+.scrolling-text-frame {
     max-height: 150px;
     background: white;
-    color: orange;
-    font-size: 4rem;
+    color: var(--seesad);
+    font-size: 2rem;
     overflow-x: hidden;
     overflow-y: hidden;
     white-space: nowrap;
+}
+
+.scrolling-text-inner {
+    animation: scrolling-text 10s infinite linear;
 }
 
 .very-high-padding {
@@ -108,34 +117,46 @@ a {
     overflow: hidden;
 }
 
+.map-lo {
+    position: relative;
+}
+
 .lo-btn {
-    animation: lo-btn-anim 1s infinite;
+    animation: lo-btn-anim 1.5s infinite;
     background: none;
     border: none;
     position: absolute;
 }
 
+.lo-btn>.svg {
+    width: 80%;
+}
+
 .lo-btn.lo-btn-1 {
-    top: 110%;
-    left: 67%;
+    top: 35%;
+    left: 75%;
+    /* animation-delay: 0s; */
 
 }
 
 .lo-btn.lo-btn-2 {
-    top: 150%;
+    top: 56%;
     left: 57%;
+    /* animation-delay: .25s; */
 
 }
 
 .lo-btn.lo-btn-3 {
-    top: 135%;
-    left: 40%;
+    top: 50%;
+    left: 35%;
+    /* animation-delay: .5s; */
 
 }
 
 .lo-btn.lo-btn-4 {
-    top: 160%;
-    left: 28%;
+    top: 65%;
+    left: 16%;
+    /* animation-delay: .75s; */
 
 }
 
@@ -147,7 +168,7 @@ a {
     --position: 0;
     position: absolute;
     top: 100%;
-    left: calc(0px + var(--position)*1px);
+    left: calc(0% + (var(--position) / 10) * 1%);
 }
 
 /* ID ---------------------------------------------------------------------------------------------------- */
@@ -171,6 +192,22 @@ a {
     position: fixed;
     z-index: 2;
     min-width: 100vw;
+}
+
+#dust-guide {
+    margin: auto;
+    color: white;
+    font-size: 3rem;
+    opacity: 30%;
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+    /* animation: lo-btn-anim 1.5s infinite; */
+
 }
 
 #section-1 {
@@ -429,5 +466,15 @@ a {
     100% {
         transform: translateY(0%);
         opacity: 100%;
+    }
+}
+
+@keyframes scrolling-text {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-170%);
     }
 }
