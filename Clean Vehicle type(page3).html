@@ -1,0 +1,207 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --skyTrain: #3C86BC;
+        --tuktuk: #FFCD2F;
+        --scooter: #262C34;
+        --boat: #FFFFFF;
+        --bus: #232B92;
+    }
+    .content-cleanVehicle{
+        width: 80%;
+        max-width: 1024px;
+        margin: auto;
+    }
+    .select-cleanVehicle{
+        border-radius: 25px;
+        background-color: #91BADF;
+        border: 2px solid #91BADF;
+        padding: 10px;
+        width: 100%;
+        margin: auto;
+        height: 20rem;
+        text-align: center;
+    }
+    .choose-cleanVehicle{
+        border-radius: 25px;
+        background-color: var(--tuktuk);
+        border: 2px solid var(--tuktuk);
+        padding: 10px;
+        width: 100%;
+        margin: auto;
+        height: 30rem;
+    }
+    .gird-main-cleanVehicle{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-auto-rows: auto;
+    }
+    .gird-select-cleanVehicle{
+        margin-left: 3rem;
+        display:flex;
+        
+    }
+    .gird-choose-cleanVehicle{
+        margin-bottom: -7rem;
+        display:grid;
+    }
+    .gird-choose-cleanVehicle-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .gird-choose-sub-cleanVehicle-content{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .select-Vehicle{
+        position:relative;
+        text-align: center;
+        padding: 10px;
+        border-right: 25px solid transparent;
+        height: 0;
+        border-top-left-radius:40px;
+        width: 125px;
+    }
+    .select-Vehicle:after {
+        content:' ';
+        top:14px;
+        left: 5px;
+        position:absolute;
+        border-radius:60px 60px 0 0;
+        width:140px;
+        height:10px;
+        display:block;
+    }
+    
+    .box-select-skyTrain{
+        border-bottom: 50px solid var(--skyTrain);
+    }
+    .box-select-skyTrain:after {
+        background:var(--skyTrain);
+    }
+    .box-select-tuktuk{
+        border-bottom: 50px solid var(--tuktuk);
+        margin-left: -1rem;
+    }
+    .box-select-tuktuk:after {
+        background:var(--tuktuk);
+    }
+    .box-select-scooter{
+        border-bottom: 50px solid var(--scooter);
+        margin-left: -1rem;
+    }
+    .box-select-scooter:after {
+        background:var(--scooter);
+    }
+    .box-select-boat{
+        border-bottom: 50px solid var(--boat);
+        margin-left: -1rem;
+    }
+    .box-select-boat:after {
+        background:var(--boat);
+    }
+    .box-select-bus{
+        border-bottom: 50px solid var(--bus);
+        margin-left: -1rem;
+    }
+    .box-select-bus:after {
+        background:var(--bus);
+    }
+    .select-Vehicle-Text{
+        margin-top: 1.5rem;
+    }
+    .content-cleanVehicle{
+        margin-left: auto;
+        margin-bottom: -3rem;
+    }
+    #choose-box{
+        margin-left: 5rem;
+        border-bottom: 50px solid var(--tuktuk);
+    }
+    #choose-box:after {
+        background:var(--tuktuk);
+    }
+    #content-cleanVehicle-image{
+        grid-column: 2 / span 2;
+        grid-row: 1 / span 2;
+        margin-top: 0;
+        background-image: url("https://cdn.discordapp.com/attachments/1012021672590721096/1143390061279322242/pngegg.png");
+        background-repeat: no-repeat;
+        background-size: 100% 80%;
+    }
+</style>
+<body>
+    <div class="content-cleanVehicle">
+        <div class="gird-choose-cleanVehicle">
+            <div class="select-Vehicle box-select-skyTrain" id="choose-box">
+                <div class="select-Vehicle-Text">
+                    <span>รถตุ๊กตุ๊กไฟฟ้า test</span>
+                </div>
+            </div>
+            <div class="choose-cleanVehicle">
+                <div class="gird-choose-cleanVehicle-content">
+                    <div class="gird-choose-sub-cleanVehicle-content">
+                        <div class="content-cleanVehicle">
+                            <h2>Details</h2>
+                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim officia aspernatur modi quisquam possimus nobis hic, minus harum non dolor aliquam, obcaecati ipsam ex aut. Consequatur illo unde rem obcaecati!</span>
+                        </div>
+                        <div class="content-cleanVehicle">
+                            <h2>Price</h2>
+                            <span>1800฿</span>
+                        </div>
+                        <div class="content-cleanVehicle">
+                            <h2>Time</h2>
+                            <span>18.00-20.00</span>
+                        </div>
+                    </div>
+                    <div id="content-cleanVehicle-image">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="gird-main-cleanVehicle">
+                <div class="gird-select-cleanVehicle">
+                <div class="select-Vehicle box-select-skyTrain">
+                    <div class="select-Vehicle-Text">
+                        <span style="color: #FFFFFF;">รถไฟฟ้า</span>
+                    </div>
+                </div>
+                <div class="select-Vehicle box-select-tuktuk">
+                    <div class="select-Vehicle-Text">
+                        <span>รถตุ๊กตุ๊กไฟฟ้า</span>
+                    </div>
+                </div>
+                <div class="select-Vehicle box-select-scooter">
+                    <div class="select-Vehicle-Text">
+                        <span style="color: #FFFFFF;">สกู๊ตเตอร์ไฟฟ้า</span>
+                    </div>
+                </div>
+                <div class="select-Vehicle box-select-boat">
+                    <div class="select-Vehicle-Text">
+                        <span>เรือไฟฟ้า</span>
+                    </div>
+                </div>
+                <div class="select-Vehicle box-select-bus">
+                    <div class="select-Vehicle-Text">
+                        <span style="color: #FFFFFF;">รถเมล์ไฟฟ้า</span>
+                    </div>
+                </div>
+            </div>
+            <div class="select-cleanVehicle">
+                <h2>รถขนส่งสาธารณะเหล่านี้ช่วยลดมลพิษ
+                    ให้กับสิ่งแวดล้อมในเมือง</h2>
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>
