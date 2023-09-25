@@ -210,6 +210,10 @@ a {
 
 }
 
+#dust-guide, #dust-sect:hover{
+    cursor: pointer;
+}
+
 #section-1 {
     height: 100vh;
     width: 90vw;
@@ -360,14 +364,16 @@ a {
 #dust-1 {
     width: 100%;
     height: 20%;
-    background: grey;
+    background-image: url("images/images/dust.png");
+    background-position-y: 0%;
     transition: 0.5s;
 }
 
 #dust-2 {
     width: 100%;
     height: 20%;
-    background: grey;
+    background-image: url("images/images/dust.png");
+    background-position-y: 20%;
     transition: 0.5s;
     transition-delay: 0.5s;
     margin-left: auto;
@@ -377,7 +383,8 @@ a {
 #dust-3 {
     width: 100%;
     height: 20%;
-    background: grey;
+    background-image: url("images/images/dust.png");
+    background-position-y: 40%;
     transition: 0.5s;
     transition-delay: 1s;
 }
@@ -385,7 +392,8 @@ a {
 #dust-4 {
     width: 100%;
     height: 20%;
-    background: grey;
+    background-image: url("images/images/dust.png");
+    background-position-y: 60%;
     transition: 0.5s;
     transition-delay: 1.5s;
     margin-left: auto;
@@ -395,7 +403,8 @@ a {
 #dust-5 {
     width: 100%;
     height: 20%;
-    background: grey;
+    background-image: url("images/images/dust.png");
+    background-position-y: 80%;
     transition: 0.5s;
     transition-delay: 2s;
 }
