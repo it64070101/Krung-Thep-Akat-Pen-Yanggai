@@ -126,6 +126,11 @@ a {
     background: none;
     border: none;
     position: absolute;
+    transition: all .5s;
+}
+
+.lo-btn:hover {
+    animation: none;
 }
 
 .lo-btn>.svg {
@@ -192,6 +197,7 @@ a {
     position: fixed;
     z-index: 2;
     min-width: 100vw;
+    transition: all 5s;
 }
 
 #dust-guide {
@@ -206,11 +212,12 @@ a {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     transition: all 1s;
-    /* animation: lo-btn-anim 1.5s infinite; */
+    animation: dust-guide-anim 1.5s infinite linear;
 
 }
 
-#dust-guide, #dust-sect:hover{
+#dust-guide,
+#dust-sect:hover {
     cursor: pointer;
 }
 
@@ -485,5 +492,19 @@ a {
 
     100% {
         transform: translateX(-170%);
+    }
+}
+
+@keyframes dust-guide-anim {
+    0% {
+        opacity: 50%;
+    }
+
+    50% {
+        opacity: 10%;
+    }
+
+    100% {
+        opacity: 50%;
     }
 }

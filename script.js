@@ -7,8 +7,10 @@ function disableDust() {
     document.querySelector('#dust-sect').style.setProperty('animation', 'weather-scroll-animation')
     document.querySelector('#dust-sect').style.setProperty('animation-delay', '5s')
     document.querySelector('#dust-sect').style.setProperty('animation-fill-mode', 'forwards')
+    document.querySelector('#dust-sect').style.setProperty('opacity', '50%')
     document.querySelector('body').style.overflowY = 'visible';
     document.querySelector('#dust-guide').style.display = 'none';
+    document.querySelector('#dust-sect:hover').style.cursor = 'default';
 }
 
 function setOverflowHidden() {
