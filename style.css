@@ -281,7 +281,7 @@ a {
     background: rgb(155, 162, 170);
     background: linear-gradient(180deg, rgba(155, 162, 170, 1) 0%, rgba(140, 141, 143, 1) 100%);
     display: grid;
-    grid-template-rows: 1 1;
+    grid-template-rows: auto auto;
 }
 
 #graph-sect-top {
