@@ -1,33 +1,38 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test weather report</title>
 </head>
 <style>
-    .content-WeatherReport{
+    .content-WeatherReport {
         width: 80%;
         max-width: 600px;
         margin: auto;
     }
-    .girdTopWeatherReport{
+
+    .girdTopWeatherReport {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: 150px;
         gap: 10px;
         justify-content: center;
     }
-    .gridSubWeatherReport{
+
+    .gridSubWeatherReport {
         text-align: center;
     }
-    .girdMidleWeatherReport{
+
+    .girdMidleWeatherReport {
         display: grid;
         grid-template-columns: repeat(4, auto);
         grid-auto-rows: auto;
         gap: 10px;
     }
-    
-    .girdLowWeatherReport{
+
+    .girdLowWeatherReport {
         margin-left: 3rem;
         margin-right: 3rem;
         display: grid;
@@ -36,7 +41,8 @@
         margin-bottom: 3rem;
         margin-top: 1rem;
     }
-    .gridInWeatherReport{
+
+    .gridInWeatherReport {
         justify-self: center;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -44,30 +50,38 @@
         gap: 10px;
         text-align: center;
     }
-    .sup-thisDay{
+
+    .sup-thisDay {
         grid-column: 1/ span 2;
         font-size: 1.1rem;
     }
-    .sup-max{
+
+    .sup-max {
         font-size: 1.2rem;
     }
-    hr{
+
+    hr {
         margin-left: 2rem;
         margin-right: 2rem;
     }
-    .thisDay{
+
+    .thisDay {
         margin-right: -3rem;
     }
-    .toDay{
+
+    .toDay {
         justify-self: start;
     }
-    .maxTemperature{
+
+    .maxTemperature {
         justify-self: end;
     }
-    .minTemperature{
+
+    .minTemperature {
         margin-left: -3rem;
     }
-    .sup-image-col{
+
+    .sup-image-col {
         justify-self: center;
         width: 5rem;
         height: 5rem;
@@ -76,7 +90,8 @@
         background-size: 100% 100%;
         grid-column: 1/ span 2;
     }
-    .sup-image-h1{
+
+    .sup-image-h1 {
         justify-self: center;
         width: 5rem;
         height: 5rem;
@@ -87,45 +102,52 @@
         margin-top: auto;
         margin-right: -4rem;
     }
-    .headTemperature{
+
+    .headTemperature {
         justify-self: center;
-        
+
     }
-    .imageAndh1 h1{
+
+    .imageAndh1 h1 {
         font-size: 5rem;
         margin-bottom: 0px;
         margin-top: 1rem;
     }
-    .blue-box{
+
+    .blue-box {
         background-color: lightblue;
     }
-    .imageAndh1{
+
+    .imageAndh1 {
         display: grid;
         grid-template-columns: repeat(3, auto);
     }
-    .Province h3{
+
+    .Province h3 {
         font-size: 2rem;
         margin-bottom: 0px;
         margin-top: 1rem;
     }
-    .How-weather h3{
+
+    .How-weather h3 {
         font-size: 1.5rem;
         margin-bottom: 0px;
         margin-top: 1rem;
     }
 </style>
+
 <body>
 
     <div class="content-WeatherReport">
-       
+
         <div class="girdMainWeatherReport">
             <div class="gridSubWeatherReport temperatureReport">
-                
+
                 <div class="imageAndh1">
                     <div class="sup-image-h1 blue-box"></div>
                     <h1 class="headTemperature">30°</h1>
                 </div>
-                
+
             </div>
             <div class="gridSubWeatherReport Province">
                 <h3>Province</h3>
@@ -179,4 +201,5 @@
 
     </div>
 </body>
+
 </html>
