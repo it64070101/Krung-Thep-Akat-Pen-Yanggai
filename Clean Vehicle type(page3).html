@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script src="script_page3.js"></script>
 <style>
     :root {
         --skyTrain: #3C86BC;
@@ -27,7 +28,7 @@
         padding: 10px;
         width: 100%;
         margin: auto;
-        height: 20rem;
+        height: 30rem;
         text-align: center;
     }
 
@@ -55,7 +56,6 @@
     }
 
     .gird-choose-cleanVehicle {
-        margin-bottom: -7rem;
         display: grid;
     }
 
@@ -145,11 +145,18 @@
     }
 
     #choose-box {
-        margin-left: 5rem;
-        border-bottom: 50px solid var(--tuktuk);
+        margin-bottom: -35.5rem;
+        
     }
 
     #choose-box:after {
+        background: var(--tuktuk);
+    }
+    #choosed{
+        margin-left: 3rem;
+        border-bottom: 50px solid var(--tuktuk);
+    }
+    #choosed:after {
         background: var(--tuktuk);
     }
 
@@ -165,8 +172,8 @@
 
 <body>
     <div class="content-cleanVehicle">
-        <div class="gird-choose-cleanVehicle">
-            <div class="select-Vehicle box-select-skyTrain" id="choose-box">
+        <div class="gird-choose-cleanVehicle" id="choose-box">
+            <div class="select-Vehicle box-select-skyTrain" id="choosed">
                 <div class="select-Vehicle-Text">
                     <span>รถตุ๊กตุ๊กไฟฟ้า test</span>
                 </div>
@@ -197,7 +204,7 @@
         </div>
         <div class="gird-main-cleanVehicle">
             <div class="gird-select-cleanVehicle">
-                <div class="select-Vehicle box-select-skyTrain">
+                <div class="select-Vehicle box-select-skyTrain" id="choose_skyTrain" onclick="myMove()">
                     <div class="select-Vehicle-Text">
                         <span style="color: #FFFFFF;">รถไฟฟ้า</span>
                     </div>
