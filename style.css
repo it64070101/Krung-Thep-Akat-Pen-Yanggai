@@ -1,5 +1,6 @@
 * {
     --seesad: #fd3e00;
+    --seethao: #565656;
     margin: 0;
     padding: 0;
 }
@@ -126,7 +127,13 @@ a {
 }
 
 .map-lo {
+    background-image: url('images/svgs/map.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
+    width: 716px;
+    overflow: hidden;
 }
 
 
@@ -147,29 +154,29 @@ a {
 }
 
 .lo-btn.lo-btn-1 {
-    top: 15%;
-    left: 55%;
+    top: 10%;
+    left: 50%;
     animation-delay: 0s;
 
 }
 
 .lo-btn.lo-btn-2 {
-    top: 40%;
-    left: 45%;
+    top: 30%;
+    left: 40%;
     animation-delay: .25s;
 
 }
 
 .lo-btn.lo-btn-3 {
-    top: 40%;
-    left: 65%;
+    top: 35%;
+    left: 60%;
     animation-delay: .5s;
 
 }
 
 .lo-btn.lo-btn-4 {
-    top: 75%;
-    left: 30%;
+    top: 65%;
+    left: 25%;
     animation-delay: .75s;
 
 }
@@ -181,12 +188,35 @@ a {
 .svg.car {
     --position: 0;
     position: absolute;
-    top: 100%;
-    left: calc(0% + (var(--position) / 10) * 1%);
+    top: 70%;
+    left: calc(-10% + (var(--position) / 10) * 1%);
 }
 
 .svg.logo {
     width: 50%;
+}
+
+.overlay {
+    width: 800px;
+    height: 500px;
+    background-image: url('images/images/overlay_bg_desktop.png');
+    position: absolute;
+    transition: all .3s;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.overlay-bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #0001;
+    z-index: 3;
+    transition: all .3s;
+    top: -100%;
 }
 
 /* ID ---------------------------------------------------------------------------------------------------- */
@@ -275,10 +305,18 @@ a {
 
 
 #places-sect {
-    min-height: calc(100vh - 100px);
+    height: calc(100vh - 100px);
     background: #d9d9d9;
     display: grid;
     grid-template-columns: 40% 60%;
+}
+
+#places-text {
+    margin: 30% 0px 0px auto;
+    text-align: start;
+    font-size: 4rem;
+    color: var(--seethao);
+    line-height: 100%;
 }
 
 #running-number-sect {
@@ -565,9 +603,25 @@ a {
 
 /* media ---------------------------------------------------------------------------------------------------- */
 
-@media(width<=425px) {
+@media(width<=768px) {
     #places-sect {
         grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    #places-text {
+        margin: auto
+    }
+
+    .map-lo {
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .overlay {
+        width: 330px;
+        height: 330px;
+        background-image: url('images/images/overlay_bg.png');
     }
 
     .weather-svg {
@@ -577,4 +631,11 @@ a {
     .weather-container {
         --size: 100vw;
     }
+}
+
+@media(width<1024px) {
+    .map-lo {
+        width: auto;
+    }
+
 }

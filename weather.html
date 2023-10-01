@@ -12,24 +12,32 @@
 
 <body data-y="0">
     <div id="background-2">
-        <div id="places-sect" class="full-page-height">
-            <img class="svg" style="width:75%;" src="images/svgs/four-places.svg" alt="">
+        <div class="overlay-bg">
+            <div class="overlay" onclick="hidePlacesOverlay()"></div>
+        </div>
+        <div id="places-sect">
+            <!-- <img class="svg" style="width:75%;" src="images/svgs/four-places.svg" alt=""> -->
+            <div id="places-text">
+                <span style="font-size: 5rem; font-weight: 600;">4 แห่ง</span><br>
+                <span style="font-weight: 400;">มลพิษเยอะ</span><br>
+                <span style="font-weight: 400;">จาก</span><span
+                    style="font-weight: 600; font-style: italic; color:var(--seesad);">การขนส่ง</span>
+                <img class="svg car" src="images/svgs/car.svg" alt="">
+            </div>
             <div class="map-lo">
-                <img class="svg map-lo" style="max-width:100%;height:auto;" src="images/svgs/map.svg" alt="">
-                <button class="lo-btn lo-btn-1">
+                <button class="lo-btn lo-btn-1" onclick="showPlacesOverlay();">
                     <h1>พหลโยธิน</h1><img class="svg" src="images/svgs/location-pin.svg" alt="">
                 </button>
-                <button class="lo-btn lo-btn-2">
+                <button class="lo-btn lo-btn-2" onclick="showPlacesOverlay();">
                     <h1>พระราม 6</h1><img class="svg" src="images/svgs/location-pin.svg" alt="">
                 </button>
-                <button class="lo-btn lo-btn-3">
+                <button class="lo-btn lo-btn-3" onclick="showPlacesOverlay();">
                     <h1>ดินแดง</h1><img class="svg" src="images/svgs/location-pin.svg" alt="">
                 </button>
-                <button class="lo-btn lo-btn-4">
+                <button class="lo-btn lo-btn-4" onclick="showPlacesOverlay();">
                     <h1>พระราม 4</h1><img class="svg" src="images/svgs/location-pin.svg" alt="">
                 </button>
             </div>
-            <img class="svg car" src="images/svgs/car.svg" alt="">
         </div>
         <div class="scrolling-text-frame">
             <h1 class="scrolling-text-inner">ปัญหามลพิษ เป็นปัญหาหลักของกรุงเทพมหานคร ซึ่งเกิดจากการจราจร</h1>

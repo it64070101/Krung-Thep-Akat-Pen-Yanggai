@@ -32,3 +32,15 @@ function setBodyScrollPosition() {
 
     // console.log(document.body.dataset.y)
 }
+
+function showPlacesOverlay() {
+    document.querySelector('.overlay-bg').style.setProperty('top', '0%')
+    document.querySelector('.overlay-bg').style.setProperty('background', '#000b')
+    document.querySelector('body').style.overflowY = 'hidden';
+}
+
+function hidePlacesOverlay() {
+    document.querySelector('.overlay-bg').style.setProperty('top', '-100%')
+    document.querySelector('.overlay-bg').style.setProperty('background', '#0001')
+    document.querySelector('body').style.overflowY = 'visible';
+}
