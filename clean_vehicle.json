@@ -1,0 +1,49 @@
+clean_vehicle =[
+    {
+    "nameEN" : "skyTrain",
+    "name" : "รถไฟฟ้า",
+    "details" : "รายละเอียด ยาพาหนะที่ 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim officia aspernatur modi",
+    "price" : "100 บาท",
+    "time" : "13.00-15.00",
+    "color" :"var(--skyTrain)",
+    "colorText" :"white",
+    "image" : "https://cdn.discordapp.com/attachments/1012021672590721096/1151159315718230028/4.jpg?ex=651b7968&is=651a27e8&hm=698a0f25e21cc29b11349edb4a6decdb991bf530c9dbc5ee3ff88586862a3c0d&"
+    },{
+        "nameEN" : "tuktuk",
+    "name" : "รถตุ๊กตุ๊กไฟฟ้า",
+    "details" : "รายละเอียด ยาพาหนะที่ 2",
+    "price" : "120 บาท",
+    "time" : "12.00-15.00",
+    "color" :"var(--tuktuk)",
+    "colorText" :"black",
+    "image" : "https://media.discordapp.net/attachments/1012021672590721096/1151159315990843432/5.jpg?ex=651b7968&is=651a27e8&hm=801c0c3053d86e8057328bd33e4e99ded1a9b64350821bae2a4ae21d1aa39b9a&=&width=800&height=600"
+    },{
+        "nameEN" : "scooter",
+    "name" : "สกู๊ตเตอร์ไฟฟ้า",
+    "details" : "รายละเอียด ยาพาหนะที่ 3",
+    "price" : "140 บาท",
+    "time" : "16.00-18.00",
+    "color" :"var(--scooter)",
+    "colorText" :"white",
+    "image" : "https://media.discordapp.net/attachments/1012021672590721096/1151159316259291207/6.jpg?ex=651b7968&is=651a27e8&hm=7135d9977b0e01932b5e959af763fbf0ca3dad64a913d3c701b428f4f08b6468&=&width=900&height=600"
+    },{
+        "nameEN" : "boat",
+    "name" : "เรือไฟฟ้า",
+    "details" : "รายละเอียด ยาพาหนะที่ 4",
+    "price" : "150 บาท",
+    "time" : "13.00-17.00",
+    "color" :"var(--boat)",
+    "colorText" :"black",
+    "image" : "https://media.discordapp.net/attachments/1012021672590721096/1151159316758401095/1.jpg?ex=651b7968&is=651a27e8&hm=fca3f6e6e4792aa22691119c2d115838e05af449c362b775cb8c2952ab022a7c&=&width=800&height=600"
+    },{
+        "nameEN" : "bus",
+    "name" : "รถเมล์ไฟฟ้า",
+    "details" : "รายละเอียด ยาพาหนะที่ 5",
+    "price" : "160 บาท",
+    "time" : "11.00-15.00",
+    "color" :"var(--bus)",
+    "colorText" :"white",
+    "image" : "https://media.discordapp.net/attachments/1012021672590721096/1151159317047820369/3.jpeg?ex=651b7968&is=651a27e8&hm=7392a8bba4523b42787a2e84d8c339bd09a2107212e0588a02e1d2628ff90911&=&width=800&height=600"
+    }
+]
+

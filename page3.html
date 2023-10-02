@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page3</title>
+    <link rel="stylesheet" href="css_page3.css">
+    <script src="clean_vehicle.json"></script>
+    <script src="script_page3.js"></script>
+</head>
+
+<body>
+    <div class="content">
+    <div class="content-opening_page">
+        <h1>ขนส่งสาธารณะที่ไม่สร้างปัญหามลพิษ</h1>
+        <br>
+        <h1>5 ขนส่ง</h1>
+        <h3>ลดปัญหามลพิษ</h3>
+    </div>
+    <div class="content-cleanVehicle">
+        <div class="gird-choose-cleanVehicle" id="choose-box">
+            <div class="select-Vehicle box-select" id="choosed">
+                <div class="select-Vehicle-Text">
+                    <span id="chooseBox">รถตุ๊กตุ๊กไฟฟ้า test</span>
+                </div>
+            </div>
+            <div class="choose-cleanVehicle" id="choosed-content">
+                <div class="gird-choose-cleanVehicle-content">
+                    <div class="gird-choose-sub-cleanVehicle-content">
+                        <div class="content-cleanVehicle">
+                            <h2>Details</h2>
+                            <span id="chooseBox_details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim officia aspernatur modi
+                                quisquam possimus nobis hic, minus harum non dolor aliquam, obcaecati ipsam ex aut.
+                                Consequatur illo unde rem obcaecati!</span>
+                        </div>
+                        <div class="content-cleanVehicle">
+                            <h2>Price</h2>
+                            <span id="chooseBox_price">1800฿</span>
+                        </div>
+                        <div class="content-cleanVehicle">
+                            <h2>Time</h2>
+                            <span id="chooseBox_time">18.00-20.00</span>
+                        </div>
+                    </div>
+                    <div id="content-cleanVehicle-image">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gird-main-cleanVehicle">
+            <div class="gird-select-cleanVehicle">
+                <div class="select-Vehicle box-select-skyTrain" id="choose_skyTrain" data-val="0" onclick="myMove(0)">
+                    <div class="select-Vehicle-Text">
+                        <span id="text_skyTrain">รถไฟฟ้า</span>
+                    </div>
+                </div>
+                <div class="select-Vehicle box-select-tuktuk" id="choose_tuktuk" data-val="1" onclick="myMove(1)">
+                    <div class="select-Vehicle-Text">
+                        <span id="text_tuktuk">รถตุ๊กตุ๊กไฟฟ้า</span>
+                    </div>
+                </div>
+                <div class="select-Vehicle box-select-scooter" id="choose_scooter" data-val="2" onclick="myMove(2)">
+                    <div class="select-Vehicle-Text">
+                        <span id="text_scooter">สกู๊ตเตอร์ไฟฟ้า</span>
+                    </div>
+                </div>
+                <div class="select-Vehicle box-select-boat" id="choose_boat" data-val="3" onclick="myMove(3)">
+                    <div class="select-Vehicle-Text">
+                        <span id="text_skyTrain">เรือไฟฟ้า</span>
+                    </div>
+                </div>
+                <div class="select-Vehicle box-select-bus" id="choose_bus" data-val="4" onclick="myMove(4)">
+                    <div class="select-Vehicle-Text">
+                        <span id="text_skyTrain">รถเมล์ไฟฟ้า</span>
+                    </div>
+                </div>
+            </div>
+            <div class="select-cleanVehicle">
+                <h2>รถขนส่งสาธารณะเหล่านี้ช่วยลดมลพิษ
+                    ให้กับสิ่งแวดล้อมในเมือง</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content-pros">
+        <h1>เมฆ 5 ก้อนพร้อมกับ aqi กระพริบ</h1>
+    </div>
+    <div class="content-WeatherReport">
+
+        <div class="girdMainWeatherReport">
+            <div class="gridSubWeatherReport temperatureReport">
+
+                <div class="imageAndh1">
+                    <div class="sup-image-h1 blue-box"></div>
+                    <h1 class="headTemperature">30°</h1>
+                </div>
+
+            </div>
+            <div class="gridSubWeatherReport Province">
+                <h3>Province</h3>
+            </div>
+            <div class="gridSubWeatherReport How-weather">
+                <h3>อากาศเป็นไงบ้าง</h3>
+            </div>
+        </div>
+        <div class="girdMidleWeatherReport">
+            <div class="gridSubWeatherReport thisDay">
+                <h3>Monday</h3>
+            </div>
+            <div class="gridSubWeatherReport toDay">
+                <h3>Today</h3>
+            </div>
+            <div class="gridSubWeatherReport maxTemperature">
+                <h3>32°</h3>
+            </div>
+            <div class="gridSubWeatherReport minTemperature">
+                <h3>25°</h3>
+            </div>
+        </div>
+        <hr>
+        <div class="girdLowWeatherReport">
+            <div class="gridInWeatherReport">
+                <div class="sup-image-col blue-box"></div>
+                <div class="sup-max">30</div>
+                <div class="sip=min">20</div>
+                <div class="sup-thisDay"><span>Sunday</span></div>
+            </div>
+            <div class="gridInWeatherReport">
+                <div class="sup-image-col blue-box"></div>
+                <div class="sup-max">30</div>
+                <div class="sip=min">20</div>
+                <div class="sup-thisDay"><span>Sunday</span></div>
+            </div>
+            <div class="gridInWeatherReport">
+                <div class="sup-image-col blue-box"></div>
+                <div class="sup-max">30</div>
+                <div class="sip=min">20</div>
+                <div class="sup-thisDay"><span>Sunday</span></div>
+            </div>
+            <div class="gridInWeatherReport">
+                <div class="sup-image-col blue-box"></div>
+                <div class="sup-max">30</div>
+                <div class="sip=min">20</div>
+                <div class="sup-thisDay"><span>Sunday</span></div>
+            </div>
+        </div>
+        <hr>
+
+    </div>
+    <div class="content-share">
+        <h1>share ลิ้ง</h1>
+    </div>
+    </div>
+
+</body>
+</html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script src="clean_vehicle.json"></script>
 <script src="script_page3.js"></script>
 <style>
     :root {
@@ -13,6 +14,9 @@
         --scooter: #262C34;
         --boat: #FFFFFF;
         --bus: #232B92;
+        --choosing: none;
+        --showing: 0%;
+        --textchoose: none;
     }
 
     .content-cleanVehicle {
@@ -33,9 +37,10 @@
     }
 
     .choose-cleanVehicle {
+        color: var(--textchoose);
         border-radius: 25px;
-        background-color: var(--tuktuk);
-        border: 2px solid var(--tuktuk);
+        background: var(--choosing);
+        border: 2px solid var(--choosing);
         padding: 10px;
         width: 100%;
         margin: auto;
@@ -67,7 +72,7 @@
 
     .gird-choose-sub-cleanVehicle-content {
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 5rem);
     }
 
     .select-Vehicle {
@@ -92,6 +97,7 @@
     }
 
     .box-select-skyTrain {
+        z-index: 5;
         border-bottom: 50px solid var(--skyTrain);
     }
 
@@ -100,6 +106,7 @@
     }
 
     .box-select-tuktuk {
+        z-index: 4;
         border-bottom: 50px solid var(--tuktuk);
         margin-left: -1rem;
     }
@@ -109,6 +116,7 @@
     }
 
     .box-select-scooter {
+        z-index: 3;
         border-bottom: 50px solid var(--scooter);
         margin-left: -1rem;
     }
@@ -118,6 +126,7 @@
     }
 
     .box-select-boat {
+        z-index: 2;
         border-bottom: 50px solid var(--boat);
         margin-left: -1rem;
     }
@@ -127,6 +136,7 @@
     }
 
     .box-select-bus {
+        z-index: 1;
         border-bottom: 50px solid var(--bus);
         margin-left: -1rem;
     }
@@ -152,13 +162,20 @@
     #choose-box:after {
         background: var(--tuktuk);
     }
+    #choosed-content{
+        background: var(--choosing);
+        opacity: var(--showing);
+    }
     #choosed{
+        color: var(--textchoose);
+        opacity: var(--showing);
         margin-left: 3rem;
-        border-bottom: 50px solid var(--tuktuk);
+        border-bottom: 50px solid var(--choosing);
     }
     #choosed:after {
-        background: var(--tuktuk);
+        background: var(--choosing);
     }
+    
 
     #content-cleanVehicle-image {
         grid-column: 2 / span 2;
@@ -168,32 +185,43 @@
         background-repeat: no-repeat;
         background-size: 100% 80%;
     }
+    #choose_skyTrain, #choose_bus,#choose_scooter{
+        color: white;
+    }
+    #choose_skyTrain, #choose_bus,#choose_scooter,#choose_boat,#choose_tuktuk:hover {
+        cursor: pointer;
+    }
+
+    .space-test{
+        height: 10rem;
+    }
 </style>
 
 <body>
+    <div class="space-test"></div>
     <div class="content-cleanVehicle">
         <div class="gird-choose-cleanVehicle" id="choose-box">
-            <div class="select-Vehicle box-select-skyTrain" id="choosed">
+            <div class="select-Vehicle box-select" id="choosed">
                 <div class="select-Vehicle-Text">
-                    <span>รถตุ๊กตุ๊กไฟฟ้า test</span>
+                    <span id="chooseBox">รถตุ๊กตุ๊กไฟฟ้า test</span>
                 </div>
             </div>
-            <div class="choose-cleanVehicle">
+            <div class="choose-cleanVehicle" id="choosed-content">
                 <div class="gird-choose-cleanVehicle-content">
                     <div class="gird-choose-sub-cleanVehicle-content">
                         <div class="content-cleanVehicle">
                             <h2>Details</h2>
-                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim officia aspernatur modi
+                            <span id="chooseBox_details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim officia aspernatur modi
                                 quisquam possimus nobis hic, minus harum non dolor aliquam, obcaecati ipsam ex aut.
                                 Consequatur illo unde rem obcaecati!</span>
                         </div>
                         <div class="content-cleanVehicle">
                             <h2>Price</h2>
-                            <span>1800฿</span>
+                            <span id="chooseBox_price">1800฿</span>
                         </div>
                         <div class="content-cleanVehicle">
                             <h2>Time</h2>
-                            <span>18.00-20.00</span>
+                            <span id="chooseBox_time">18.00-20.00</span>
                         </div>
                     </div>
                     <div id="content-cleanVehicle-image">
@@ -204,29 +232,29 @@
         </div>
         <div class="gird-main-cleanVehicle">
             <div class="gird-select-cleanVehicle">
-                <div class="select-Vehicle box-select-skyTrain" id="choose_skyTrain" onclick="myMove()">
+                <div class="select-Vehicle box-select-skyTrain" id="choose_skyTrain" data-val="0" onclick="myMove(0)">
                     <div class="select-Vehicle-Text">
-                        <span style="color: #FFFFFF;">รถไฟฟ้า</span>
+                        <span id="text_skyTrain">รถไฟฟ้า</span>
                     </div>
                 </div>
-                <div class="select-Vehicle box-select-tuktuk">
+                <div class="select-Vehicle box-select-tuktuk" id="choose_tuktuk" data-val="1" onclick="myMove(1)">
                     <div class="select-Vehicle-Text">
-                        <span>รถตุ๊กตุ๊กไฟฟ้า</span>
+                        <span id="text_tuktuk">รถตุ๊กตุ๊กไฟฟ้า</span>
                     </div>
                 </div>
-                <div class="select-Vehicle box-select-scooter">
+                <div class="select-Vehicle box-select-scooter" id="choose_scooter" data-val="2" onclick="myMove(2)">
                     <div class="select-Vehicle-Text">
-                        <span style="color: #FFFFFF;">สกู๊ตเตอร์ไฟฟ้า</span>
+                        <span id="text_scooter">สกู๊ตเตอร์ไฟฟ้า</span>
                     </div>
                 </div>
-                <div class="select-Vehicle box-select-boat">
+                <div class="select-Vehicle box-select-boat" id="choose_boat" data-val="3" onclick="myMove(3)">
                     <div class="select-Vehicle-Text">
-                        <span>เรือไฟฟ้า</span>
+                        <span id="text_skyTrain">เรือไฟฟ้า</span>
                     </div>
                 </div>
-                <div class="select-Vehicle box-select-bus">
+                <div class="select-Vehicle box-select-bus" id="choose_bus" data-val="4" onclick="myMove(4)">
                     <div class="select-Vehicle-Text">
-                        <span style="color: #FFFFFF;">รถเมล์ไฟฟ้า</span>
+                        <span id="text_skyTrain">รถเมล์ไฟฟ้า</span>
                     </div>
                 </div>
             </div>
