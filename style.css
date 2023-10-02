@@ -70,6 +70,7 @@ a {
     overflow-x: hidden;
     overflow-y: hidden;
     white-space: nowrap;
+    padding: 1rem;
 }
 
 .scrolling-text-inner {
@@ -320,13 +321,44 @@ a {
 }
 
 #running-number-sect {
-    background: rgb(156, 164, 173);
-    background: linear-gradient(0deg, rgba(156, 164, 173, 1) 0%, rgba(51, 65, 75, 0.89) 100%);
+    background: linear-gradient(rgba(51, 65, 75, 0.86), rgba(156, 164, 173, 1), rgba(140, 141, 143, 1));
+}
+
+#running-number-info-1 {
+    padding: 10rem;
+}
+
+#running-number-info-2 {
+    padding: 10rem;
+}
+
+#running-number-info-3 {
+    padding: 10rem;
+}
+
+#running-number-info-svg {
+    margin: 1rem;
+    white-space: nowrap;
+}
+
+#running-number-info-svg span {
+    padding: 5rem;
+}
+
+#running-number-info-box {
+    margin: auto;
+    padding: 1rem;
+    width: fit-content;
+    background-color: rgba(198, 198, 198, 1);
+    border-radius: 1rem;
+    justify-self: center;
+}
+
+#running-number-info-box h1 {
+    color: rgba(253, 62, 0, 1);
 }
 
 #graph-sect {
-    background: rgb(155, 162, 170);
-    background: linear-gradient(180deg, rgba(155, 162, 170, 1) 0%, rgba(140, 141, 143, 1) 100%);
     display: grid;
     grid-template-rows: auto auto;
 }
@@ -345,27 +377,43 @@ a {
     background-color: rgba(253, 62, 0, 1);
 }
 
-#graph-sect-bottom-2 {
-    background-color: rgba(190, 190, 190, 1);
-    padding-left: 9rem;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    text-align: left;
-    gap: 2rem;
+#graph-sect-bottom-1-text {
+    text-align: right;
+    padding-top: 5rem;
+    padding-right: 10rem;
+    color: white;
 }
 
-#graph-sect-bottom-2-pic img {
-    /* background-image: url("images/images/Factory.png");
-    bac */
+#graph-sect-bottom-1-text h1 {
+    font-size: 3rem;
+}
+
+#graph-sect-bottom-1-svg .svg {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#graph-sect-bottom-1-svg hr {
+    border: 1px dashed white;
+}
+
+#graph-sect-bottom-2 {
+    background-color: rgba(190, 190, 190, 1);
+}
+
+#graph-sect-bottom-2-contain {
+    margin: auto;
+    width: fit-content;
+    text-align: left;
+    padding: 5rem;
+}
+
+#graph-sect-bottom-2-contain img {
     height: 10em;
     width: auto;
 }
 
-#graph-sect-bottom-2-text h1 {
-    /* background-image: url("images/images/Factory.png");
-    bac */
+#graph-sect-bottom-2-contain h1 {
     font-size: 3rem;
 }
 
