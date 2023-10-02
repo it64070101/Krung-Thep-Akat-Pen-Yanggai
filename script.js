@@ -11,6 +11,7 @@ function disableDust() {
     document.querySelector('body').style.overflowY = 'visible';
     document.querySelector('#dust-guide').style.display = 'none';
     document.querySelector('#dust-sect:hover').style.cursor = 'default';
+    document.querySelector('#dust-sect').style.setProperty('z-index', '-1')
 }
 
 function setOverflowHidden() {
