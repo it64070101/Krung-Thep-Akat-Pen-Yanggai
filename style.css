@@ -190,6 +190,7 @@ a {
     position: absolute;
     top: 70%;
     left: calc(-10% + (var(--position) / 10) * 1%);
+    width: 10vw;
 }
 
 .svg.logo {
@@ -659,6 +660,49 @@ a {
 
 /* media ---------------------------------------------------------------------------------------------------- */
 
+
+@media(width<=1200px) {
+    .map-lo {
+        width: auto;
+    }
+
+    .lo-btn>.svg {
+        width: 50%;
+    }
+
+    #places-text {
+        margin: auto;
+    }
+
+    .lo-btn.lo-btn-1 {
+        top: 20%;
+        left: 50%;
+        animation-delay: 0s;
+
+    }
+
+    .lo-btn.lo-btn-2 {
+        top: 40%;
+        left: 35%;
+        animation-delay: .25s;
+
+    }
+
+    .lo-btn.lo-btn-3 {
+        top: 35%;
+        left: 60%;
+        animation-delay: .5s;
+
+    }
+
+    .lo-btn.lo-btn-4 {
+        top: 65%;
+        left: 25%;
+        animation-delay: .75s;
+
+    }
+}
+
 @media(width<=768px) {
 
     #places-sect {
@@ -667,13 +711,47 @@ a {
     }
 
     #places-text {
-        margin: auto
+        margin: 10% auto auto auto;
     }
 
     .map-lo {
+        /* background: #fd3e00; */
         background-size: cover;
-        height: 100vh;
+        width: 100%;
+        height: 100vw;
         padding: 10% 0px 10% 0px;
+    }
+
+    .lo-btn>.svg {
+        width: 15vw;
+    }
+
+    .lo-btn.lo-btn-1 {
+        top: 5%;
+        left: 50%;
+        animation-delay: 0s;
+
+    }
+
+    .lo-btn.lo-btn-2 {
+        top: 25%;
+        left: 35%;
+        animation-delay: .25s;
+
+    }
+
+    .lo-btn.lo-btn-3 {
+        top: 30%;
+        left: 60%;
+        animation-delay: .5s;
+
+    }
+
+    .lo-btn.lo-btn-4 {
+        top: 60%;
+        left: 20%;
+        animation-delay: .75s;
+
     }
 
     .overlay {
@@ -695,14 +773,9 @@ a {
         font-size: 5vw;
     }
 
-}
-
-@media(width<=1200px) {
-    .map-lo {
-        width: auto;
+    .svg.car {
+        width: 20vw;
+        top: 40%;
     }
 
-    #places-text {
-        margin: auto
-    }
 }
