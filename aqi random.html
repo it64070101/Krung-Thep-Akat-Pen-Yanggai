@@ -1,0 +1,217 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: gray;
+    }
+    .content-pros {
+        margin-top: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        max-width: 1200px;
+        height: 10rem;
+        position: relative; /* Make sure it's a positioned container */
+    }
+    
+    .blinking-text {
+        color: white;
+        position: relative;
+        z-index: -1;
+        animation: blink 1s infinite alternate; /* Blinking animation */
+        opacity: 0; /* Initially hide the elements */
+    }
+    .blinking-text h4{
+        margin: 0;
+    }
+    .aqi-show{
+        margin-left: 1rem;
+    }
+
+    
+    @keyframes blink {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .main-grid-pros{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(5, 1fr);
+        grid-auto-rows: auto;
+        
+    }
+    .aqi-grid-pros{
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        height: 20rem;
+    }
+    .pros-grid{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-auto-rows: auto;
+    }
+    .pros-grid-top{
+        display: grid;
+        justify-content: end;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .pros-block-content{
+        z-index: 1;
+        margin-top: -20rem;
+    }
+    .head-top{
+        justify-self: end;
+    }
+    .head-top span{
+        color: white;
+    }
+    .head-top h1{
+        margin: 0px;
+        margin-left: 1rem;
+    }
+    .text-down{
+        margin-left: 3rem;
+    }
+    .pros-image{
+        grid-column: 4/ span 2;
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        height: 20rem;
+        width: 20rem;
+        background-image: url("https://cdn.discordapp.com/attachments/1012021672590721096/1143390061279322242/pngegg.png");
+        background-repeat: no-repeat;
+        background-size: 100% 80%;
+    }
+    .pros-text{
+        width: 8rem;
+        grid-column: 7/ span 1;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .animation_num_2{
+        animation: blink 1.5s infinite alternate; /* Blinking animation */
+    }
+    .animation_num_3{
+        animation: blink 1.25s infinite alternate; /* Blinking animation */
+    }
+    .animation_num_4{
+        animation: blink 2s infinite alternate; /* Blinking animation */
+    }
+
+    
+</style>
+
+<body>
+    <div class="content-pros">
+        <div class="main-grid-pros">
+            <div class="pros-block">
+                <div class="aqi-grid-pros">
+                <div class="blinking-text animation_num_1">
+                    <h4>AQI</h4>
+                    <span class="aqi-show"></span>
+                </div>
+                <div class="blinking-text animation_num_2">
+                    <h4>AQI</h4>
+                    <span class="aqi-show"></span>
+                </div>
+                <div class="blinking-text animation_num_3">
+                    <h4>AQI</h4>
+                    <span class="aqi-show"></span>
+                </div>
+                <div class="blinking-text animation_num_4">
+                    <h4>AQI</h4>
+                    <span class="aqi-show"></span>
+                </div>
+            </div>
+            <div class="pros-block-content">
+            <div class="pros-grid-top">
+                <div class="head-top">
+                    <span>หากมลพิษลดลง</span>
+                    <h1>กรุงเทพฯ</h1>
+                    <span class="text-down">จะเป็นอย่างไร?</span>
+                </div>
+            </div>
+            <div class="pros-grid">
+                <div class="pros-image">
+                </div>
+                <div class="pros-text">
+                    <h3>1.</h3>
+                    <span>
+                        ฝุ่นจางๆหรือควัน Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, atque. Officia aliquid aspernatur quas non sunt beatae nisi architecto labore numquam sapiente, corrupti voluptatibus obcaecati nobis neque rerum distinctio cumque?
+                    </span>
+                </div>
+            </div>
+            </div>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</body>
+<script>
+
+// Function to set random positions for text elements
+function setRandomPosition(element) {
+    const maxWidth = document.querySelector('.aqi-grid-pros').clientWidth-150;
+    const maxHeight = document.querySelector('.aqi-grid-pros').clientHeight-50;
+    const left = Math.random() * (maxWidth - element.clientWidth) + 'px';
+    const top = Math.random() * (maxHeight - element.clientHeight) + 'px';
+    
+    element.style.left = left;
+    element.style.top = top;
+}
+function setRandomAQInumber(element){
+    const setAQI = document.getElementsByClassName("blinking-text");
+    for(let j of setAQI){
+        const min = 50;
+        const max = 120;
+        const randomInteger = Math.floor(Math.random() * (max - min + 1)) + min;
+        element.innerHTML = `<h4>AQI</h4><span class="aqi-show">${randomInteger}</span>`;
+    }
+}
+
+
+
+function updatePositions(animationNum) {
+    const textElements = document.querySelectorAll('.animation_num_' + animationNum);
+   
+    textElements.forEach((element) => {
+        setRandomPosition(element);
+        setRandomAQInumber(element);
+    });
+}
+
+// Initial positioning for each animation group
+updatePositions(1);
+updatePositions(2);
+updatePositions(3);
+updatePositions(4);
+
+// Periodically update positions for each animation group
+setInterval(() => updatePositions(1), 2000);
+setInterval(() => updatePositions(2), 3000);
+setInterval(() => updatePositions(3), 2500);
+setInterval(() => updatePositions(4), 4000);
+
+
+</script>
+</html>
