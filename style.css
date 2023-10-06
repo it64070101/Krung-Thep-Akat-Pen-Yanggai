@@ -387,13 +387,34 @@ a {
     padding: 10rem;
 }
 
-#running-number-info-svg {
-    margin: 1rem;
-    white-space: nowrap;
+#running-number-info-aqi {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 1rem;
+    padding: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
 }
 
-#running-number-info-svg span {
-    margin: 1vw;
+#running-number-info-aqi-1 {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#running-number-info-aqi-2 {
+    background-color: rgba(231, 231, 231, 1);
+}
+
+#running-number-info-aqi-3 {
+    background-color: rgba(198, 198, 198, 1);
+}
+
+#running-number-info-aqi-4 {
+    background-color: rgba(163, 163, 163, 1);
+}
+
+#running-number-info-aqi-5 {
+    background-color: rgba(115, 115, 115, 1);
 }
 
 #running-number-info-box {
