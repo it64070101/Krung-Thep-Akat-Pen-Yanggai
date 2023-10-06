@@ -246,7 +246,6 @@ a {
     opacity: 100%;
 }
 
-
 /* ID ---------------------------------------------------------------------------------------------------- */
 
 #background-1 {
@@ -623,6 +622,22 @@ a {
     font-weight: 600;
 }
 
+#transport-tier-sect{
+    background: rgb(140, 142, 144);
+    /* background: linear-gradient(180deg, rgba(140, 142, 144, 1) 0%, rgba(60, 75, 88, 1) 100%); */
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    padding: 10rem;
+    justify-content: center;
+}
+#transport-type{
+    display: grid;
+    grid-template-columns: repeat(7, 3rem 10rem);
+}
+#transport-type-sect{
+    display: flex;
+}
 /* Keyframes ---------------------------------------------------------------------------------------------------- */
 
 @keyframes weather-scroll-animation {
