@@ -30,9 +30,9 @@ function setBodyScrollPosition() {
     if (document.body.dataset.y <= 350) {
         document.querySelector('.svg.car').style.setProperty('--position', document.body.dataset.y)
     }
-    if ((document.body.dataset.y * 10 - 8630) <= 11370) {
+    if ((document.body.dataset.y * 10 - 7630) <= 11370) {
 
-        document.querySelector('#increasing-num').innerHTML = (document.body.dataset.y * 10 - 8630).toLocaleString("en-US") + ",000"
+        document.querySelector('#increasing-num').innerHTML = (document.body.dataset.y * 10 - 7630).toLocaleString("en-US") + ",000"
     }
     else if (document.body.dataset.y > 1900) {
         document.querySelector('#increasing-num').innerHTML = "11,370,000"

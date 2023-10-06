@@ -361,9 +361,9 @@ a {
     margin: 4rem;
 }
 
-#running-number-info-2 {
+/* #running-number-info-2 {
     padding: 10rem;
-}
+} */
 
 #running-number-info-2 h1:nth-child(1) {
     font-size: 4rem;
@@ -384,17 +384,19 @@ a {
 }
 
 #running-number-info-3 {
-    padding: 10rem;
+    /* padding: 10rem; */
 }
 
 #running-number-info-aqi {
+    margin: auto;
     display: grid;
     grid-template-rows: 2fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 1rem;
-    padding: 3rem;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding: 3rem 0px 3rem 0px;
+    width: 768px;
+    /* padding-left: 20rem; */
+    /* padding-right: 20rem; */
 }
 
 #running-number-info-aqi-1 {
@@ -418,11 +420,13 @@ a {
 }
 
 #running-number-info-box {
+    color: black;
+    font-size: 2rem;
     margin: auto;
     padding: 1rem;
     width: fit-content;
     background-color: rgba(198, 198, 198, 1);
-    border-radius: 1rem;
+    border-radius: 2rem;
     justify-self: center;
 }
 
@@ -437,7 +441,12 @@ a {
 
 #graph-sect-top {
     background-color: rgba(235, 235, 235, 1);
-    padding: 1.5em;
+    padding: 1em;
+    font-size: 2rem;
+}
+
+#graph-sect-top h1 {
+    font-weight: 400;
 }
 
 #graph-sect-bottom {
@@ -451,13 +460,19 @@ a {
 
 #graph-sect-bottom-1-text {
     text-align: right;
-    padding-top: 5rem;
-    padding-right: 10rem;
+    padding-top: 1rem;
+    padding-right: 20vw;
     color: white;
 }
 
 #graph-sect-bottom-1-text h1 {
-    font-size: 3rem;
+    font-size: 6vw;
+}
+
+#graph-sect-bottom-1-text p {
+    font-weight: 200;
+    font-size: 3vw;
+    line-height: 3vw;
 }
 
 #graph-sect-bottom-1-svg .svg {
@@ -466,28 +481,34 @@ a {
 }
 
 #graph-sect-bottom-1-svg hr {
-    border: 1px dashed white;
+    border: none;
+    height: 6px;
+    background: white;
+    background: repeating-linear-gradient(90deg, white, white 3vw, transparent 3vw, transparent 6vw);
+    margin-bottom: 10vh;
 }
 
 #graph-sect-bottom-2 {
     background-color: rgba(190, 190, 190, 1);
+    padding: 5vw;
 }
 
 #graph-sect-bottom-2-contain {
-    margin: auto;
-    width: fit-content;
     text-align: left;
-    padding: 5rem;
 }
 
 #graph-sect-bottom-2-contain img {
-    /* height: 10em; */
     width: 15vw;
 }
 
 #graph-sect-bottom-2-contain h1 {
-    font-size: 3rem;
+    font-size: 5vw;
 }
+
+#graph-sect-bottom-2-contain p {
+    font-size: 2vw;
+}
+
 
 #personal-car-sect {
     background: rgb(140, 142, 144);
@@ -755,7 +776,24 @@ a {
     }
 }
 
+@media(width<=1024px) {
+    #running-number-info-aqi {
+        width: 80%;
+    }
+}
+
 @media(width<=768px) {
+    #running-number-info-1 {
+        padding: 0;
+    }
+
+    #graph-sect-bottom-2-contain h1 {
+        font-size: 2rem;
+    }
+
+    #graph-sect-bottom-2-contain p {
+        font-size: .75rem;
+    }
 
     #places-sect {
         grid-template-columns: 1fr;
@@ -764,6 +802,27 @@ a {
 
     #places-text {
         margin: 10% auto auto auto;
+    }
+
+    #graph-sect-bottom-1-text h1 {
+        font-size: 15vw;
+    }
+
+    #graph-sect-bottom-1-text p {
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+
+    #graph-sect-bottom-2-contain h1 {
+        font-size: 8vw;
+    }
+
+    #graph-sect-bottom-2-contain p {
+        font-size: 3vw;
+    }
+
+    #running-number-info-box {
+        font-size: 2rem;
     }
 
     .map-lo {
