@@ -98,6 +98,7 @@ a {
 }
 
 .full-page-height {
+    background: none;
     min-height: 100vh;
 }
 
@@ -228,6 +229,23 @@ a {
     width: 5vw;
 }
 
+.cloud {
+    position: absolute;
+    animation: cloud-anim-lr 50s infinite linear;
+}
+
+.c1 {
+    top: -80%;
+    left: -50%;
+    opacity: 100%;
+}
+
+.c2 {
+    top: 50%;
+    left: -80%;
+    opacity: 100%;
+}
+
 
 /* ID ---------------------------------------------------------------------------------------------------- */
 
@@ -337,8 +355,32 @@ a {
     padding: 10rem;
 }
 
+#running-number-info-1 p:nth-child(1),
+#running-number-info-1 p:nth-child(3) {
+    font-size: 2rem;
+    margin: 4rem;
+}
+
 #running-number-info-2 {
     padding: 10rem;
+}
+
+#running-number-info-2 h1:nth-child(1) {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 2rem;
+}
+
+#running-number-info-2 h1:nth-child(2) {
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 2rem;
+}
+
+#running-number-info-2 h1:nth-child(3) {
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 2rem;
 }
 
 #running-number-info-3 {
@@ -436,23 +478,6 @@ a {
     background: linear-gradient(180deg, rgba(61, 75, 88, 1) 0%, rgba(32, 34, 37, 1) 100%);
 }
 
-.cloud {
-    position: absolute;
-    animation: cloud-anim-lr 50s infinite linear;
-}
-
-.c1 {
-    top: -80%;
-    left: -50%;
-    opacity: 100%;
-}
-
-.c2 {
-    top: 50%;
-    left: -80%;
-    opacity: 100%;
-}
-
 #main-icon {
     height: 50%;
     width: 50%;
@@ -548,6 +573,12 @@ a {
     background-position-y: 80%;
     transition: 0.5s;
     transition-delay: 2s;
+}
+
+#increasing-num {
+    --num: 0;
+    font-size: 5rem;
+    font-weight: 600;
 }
 
 /* Keyframes ---------------------------------------------------------------------------------------------------- */

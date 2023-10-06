@@ -24,14 +24,20 @@ function scrollToTop() {
 }
 
 document.addEventListener("scroll", setBodyScrollPosition);
-
+number = 0
 function setBodyScrollPosition() {
     document.body.dataset.y = window.scrollY
     if (document.body.dataset.y <= 350) {
         document.querySelector('.svg.car').style.setProperty('--position', document.body.dataset.y)
     }
+    if ((document.body.dataset.y * 10 - 8630) <= 11370) {
 
-    // console.log(document.body.dataset.y)
+        document.querySelector('#increasing-num').innerHTML = (document.body.dataset.y * 10 - 8630).toLocaleString("en-US") + ",000"
+    }
+    else if (document.body.dataset.y > 1900) {
+        document.querySelector('#increasing-num').innerHTML = "11,370,000"
+    }
+
 }
 
 function showPlacesOverlay() {
