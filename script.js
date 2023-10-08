@@ -27,7 +27,7 @@ document.addEventListener("scroll", setBodyScrollPosition);
 number = 0
 function setBodyScrollPosition() {
     document.body.dataset.y = window.scrollY
-    if (document.body.dataset.y <= 350) {
+    if (document.body.dataset.y <= 300) {
         document.querySelector('.svg.car').style.setProperty('--position', document.body.dataset.y)
     }
     if ((document.body.dataset.y * 10 - 7630) <= 11370) {

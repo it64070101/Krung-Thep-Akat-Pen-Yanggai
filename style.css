@@ -63,19 +63,28 @@ a {
 
 
 .scrolling-text-frame {
-    height: 6vw;
+    height: 6rem;
     background: white;
     color: var(--seesad);
-    font-size: 2vw;
     overflow-x: hidden;
     overflow-y: hidden;
     white-space: nowrap;
+    width: 100%;
     /* padding: 1rem; */
 }
 
 .scrolling-text-inner {
-    font-weight: 400;
-    animation: scrolling-text-anim 8s infinite linear;
+    display: flex;
+    font-size: 4rem;
+    width: 3904px;
+    animation-name: scrolling-text-anim;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.scrolling-text-inner__inner {
+    white-space: nowrap;
 }
 
 .very-high-padding {
@@ -190,7 +199,7 @@ a {
     --position: 0;
     position: absolute;
     top: 70%;
-    left: calc(-10% + (var(--position) / 10) * 1%);
+    left: calc(0% + (var(--position) / 10) * 1%);
     width: 10vw;
 }
 
@@ -749,12 +758,12 @@ a {
 }
 
 @keyframes scrolling-text-anim {
-    0% {
-        transform: translateX(100vw);
+    from {
+        transform: translateX(0)
     }
 
-    100% {
-        transform: translateX(-300vw);
+    to {
+        transform: translateX(-50%)
     }
 }
 
