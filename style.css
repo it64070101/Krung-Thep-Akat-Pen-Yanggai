@@ -547,6 +547,11 @@ a {
     height: 5rem;
 }
 
+#pcbs-text-below {
+    text-align: center;
+    padding-top: 10rem;
+}
+
 #go-to-transport-sect {
     background: rgb(61, 75, 88);
     background: linear-gradient(180deg, rgba(61, 75, 88, 1) 0%, rgba(32, 34, 37, 1) 100%);
