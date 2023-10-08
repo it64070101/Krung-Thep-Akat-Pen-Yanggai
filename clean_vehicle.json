@@ -2,48 +2,48 @@ clean_vehicle =[
     {
     "nameEN" : "skyTrain",
     "name" : "รถไฟฟ้า",
-    "details" : "รายละเอียด ยาพาหนะที่ 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim officia aspernatur modi",
-    "price" : "100 บาท",
-    "time" : "13.00-15.00",
+    "details" : "รถไฟฟ้า BTS คือรถไฟฟ้าที่ให้บริการในพื้นที่ของ กรุงเทพฯ, สมุทรปราการ, ปทุมธานี และนนทบุรี ดำเนินการโดยบริษัท ระบบขนส่งมวลชนกรุงเทพ จำกัด (มหาชน) มีสถานีให้บริการทั้งหมด 60 สถานี",
+    "price" : "21.52 – 64.53 บาท",
+    "time" : "05.15-24.00 น.",
     "color" :"var(--skyTrain)",
     "colorText" :"white",
-    "image" : "https://cdn.discordapp.com/attachments/1012021672590721096/1151159315718230028/4.jpg?ex=651b7968&is=651a27e8&hm=698a0f25e21cc29b11349edb4a6decdb991bf530c9dbc5ee3ff88586862a3c0d&"
+    "image" : "images/images/folder_BTS.jpg"
     },{
         "nameEN" : "tuktuk",
     "name" : "รถตุ๊กตุ๊กไฟฟ้า",
-    "details" : "รายละเอียด ยาพาหนะที่ 2",
-    "price" : "120 บาท",
-    "time" : "12.00-15.00",
+    "details" : "มูฟมี (MuvMi) รถตุ๊กตุ๊กไฟฟ้า 100% สัญชาติไทย ให้บริการโดยบริษัท เออร์เบิน โมบิลิตี้เทค จำกัด ให้บริการครอบคลุมพื้นที่ 12 ย่านทั่วกรุงเทพฯ",
+    "price" : "ค่าบริการเริ่มต้นที่ 40 บาท",
+    "time" : "6.00-20.00 น.",
     "color" :"var(--tuktuk)",
     "colorText" :"black",
-    "image" : "https://media.discordapp.net/attachments/1012021672590721096/1151159315990843432/5.jpg?ex=651b7968&is=651a27e8&hm=801c0c3053d86e8057328bd33e4e99ded1a9b64350821bae2a4ae21d1aa39b9a&=&width=800&height=600"
+    "image" : "images/images/folder_tuktuk.webp"
     },{
         "nameEN" : "scooter",
     "name" : "สกู๊ตเตอร์ไฟฟ้า",
-    "details" : "รายละเอียด ยาพาหนะที่ 3",
-    "price" : "140 บาท",
-    "time" : "16.00-18.00",
+    "details" : "E-Scooter เป็นสกู๊ตเตอร์ไฟฟ้าจาก HAUP บริษัทพัฒนาแพลตฟอร์มคาร์แชร์ริ่ง โดยมี พื้นที่ 18 สเตชันที่ให้บริการเช่าสกู๊ตเตอร์ไฟฟ้า รอบๆ กรุงเทพฯ",
+    "price" : "ค่าบริการเริ่มต้นที่ 30 บาท",
+    "time" : "เปิดให้บริการ 24 ชั่วโมง",
     "color" :"var(--scooter)",
     "colorText" :"white",
-    "image" : "https://media.discordapp.net/attachments/1012021672590721096/1151159316259291207/6.jpg?ex=651b7968&is=651a27e8&hm=7135d9977b0e01932b5e959af763fbf0ca3dad64a913d3c701b428f4f08b6468&=&width=900&height=600"
+    "image" : "images/images/folder_scooter.webp"
     },{
         "nameEN" : "boat",
     "name" : "เรือไฟฟ้า",
-    "details" : "รายละเอียด ยาพาหนะที่ 4",
-    "price" : "150 บาท",
-    "time" : "13.00-17.00",
+    "details" : "เรือไฟฟ้า จาก ไทย สมายล์ โบ้ท เป็นเรือไฟฟ้าติดแอร์เที่ยวกรุงเทพฯ ให้บริการสอง 3 สาย คือ 1.พระปิ่นเกล้า - สาทร 2.พระนั่งเกล้า - สาทร 3.พระราม 7 - วัดวรจรรยาวาส",
+    "price" : "40 บาทตลอดตลอดวัน",
+    "time" : "6.00-18.45 น.",
     "color" :"var(--boat)",
     "colorText" :"black",
-    "image" : "https://media.discordapp.net/attachments/1012021672590721096/1151159316758401095/1.jpg?ex=651b7968&is=651a27e8&hm=fca3f6e6e4792aa22691119c2d115838e05af449c362b775cb8c2952ab022a7c&=&width=800&height=600"
+    "image" : "images/images/folder_boat.jpg"
     },{
         "nameEN" : "bus",
     "name" : "รถเมล์ไฟฟ้า",
-    "details" : "รายละเอียด ยาพาหนะที่ 5",
-    "price" : "160 บาท",
-    "time" : "11.00-15.00",
+    "details" : "รถเมล์ไฟฟ้า จาก บริษัท ไทย สมายล์ บัส จำกัด เส้นทางให้บริการครอบคลุม กรุงเทพมหานครและปริมณฑล มี 9 สายให้บริการ ",
+    "price" : "15-25 บาท",
+    "time" : "05.00-22.00 น",
     "color" :"var(--bus)",
     "colorText" :"white",
-    "image" : "https://media.discordapp.net/attachments/1012021672590721096/1151159317047820369/3.jpeg?ex=651b7968&is=651a27e8&hm=7392a8bba4523b42787a2e84d8c339bd09a2107212e0588a02e1d2628ff90911&=&width=800&height=600"
+    "image" : "images/images/folder_bus.jpg"
     }
 ]
 
