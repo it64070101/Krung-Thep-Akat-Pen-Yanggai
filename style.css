@@ -514,6 +514,39 @@ a {
     background: linear-gradient(180deg, rgba(140, 142, 144, 1) 0%, rgba(60, 75, 88, 1) 100%);
 }
 
+#personal-car-bad-sect {
+    color: white;
+    text-align: left;
+}
+
+#pcbs-text {
+    --move: 0;
+    position: absolute;
+    left: calc(-40rem + var(--move) * 1rem);
+    /* left: -40rem; */
+    transition: all 5s;
+}
+
+#pcbs-image {
+    --move: 0;
+    position: absolute;
+    left: calc(-20rem + var(--move) * 1rem);
+    /* left: 120rem; */
+    transition: all 4.5s;
+}
+
+#personal-car-bad-sect-one {
+    background-color: rgba(255, 69, 26, 1);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#personal-car-bad-sect-img {
+    width: auto;
+    height: 5rem;
+}
+
 #go-to-transport-sect {
     background: rgb(61, 75, 88);
     background: linear-gradient(180deg, rgba(61, 75, 88, 1) 0%, rgba(32, 34, 37, 1) 100%);
@@ -622,7 +655,7 @@ a {
     font-weight: 600;
 }
 
-#transport-tier-sect{
+#transport-tier-sect {
     background: rgb(140, 142, 144);
     /* background: linear-gradient(180deg, rgba(140, 142, 144, 1) 0%, rgba(60, 75, 88, 1) 100%); */
     display: grid;
@@ -631,13 +664,16 @@ a {
     padding: 10rem;
     justify-content: center;
 }
-#transport-type{
+
+#transport-type {
     display: grid;
     grid-template-columns: repeat(7, 3rem 10rem);
 }
-#transport-type-sect{
+
+#transport-type-sect {
     display: flex;
 }
+
 /* Keyframes ---------------------------------------------------------------------------------------------------- */
 
 @keyframes weather-scroll-animation {
