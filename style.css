@@ -53,7 +53,6 @@ a {
     border-radius: 20px;
     padding: 1rem;
     border: 0;
-    margin: 4rem;
     text-decoration: none;
     background: #fff3;
     color: white;
@@ -115,6 +114,9 @@ a {
     background: red;
 }
 
+.weather-next-page button {
+    width: 509px;
+}
 
 /*------------------------------------*/
 .scroll-container {
