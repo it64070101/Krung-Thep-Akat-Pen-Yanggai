@@ -679,6 +679,36 @@ a {
     display: flex;
 }
 
+#calendar-sect{
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-auto-rows: 10rem;
+    padding: 10rem;
+}
+
+#calendar{
+    border-bottom: white solid;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+}
+#calendar-head-start{
+    border-bottom: white solid;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+#calendar-head-end{
+    border-bottom: white solid;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+#calendar-end{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+}
 /* Keyframes ---------------------------------------------------------------------------------------------------- */
 
 @keyframes weather-scroll-animation {
