@@ -9,12 +9,24 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="groud-image">
+        <img src="images\images\Cloud.png" alt="Image 1" class="background-image-cloud" id="image-1" />
+        <img src="images\images\Cloud.png" alt="Image 2" class="background-image-cloud" id="image-2" />
+        <img src="images\images\Cloud.png" alt="Image 3" class="background-image-cloud" id="image-3" />
+        <img src="images\images\Cloud.png" alt="Image 4" class="background-image-cloud" id="image-4" />
+        <img src="images\images\Cloud.png" alt="Image 5" class="background-image-cloud" id="image-5" />
+        <img src="images\images\Cloud.png" alt="Image 6" class="background-image-cloud" id="image-6" />
+    </div>
     <div class="content">
         <div class="content-opening_page">
             <div class="opening_page_block">
                 <h1 class="opening_page_text">ขนส่งสาธารณะที่ไม่สร้าง</h1>
                 <h1 class="opening_page_text">ปัญหามลพิษ</h1>
-                <div class="opening_page_image">image</div>
+                <div class="opening_page_image">
+                    <div class="opening_image-car"></div>
+                    <hr class="white-road">
+                </div>
                 <br>
             <div class="opening_page_block_down">
                 <h3>อย่างที่ทราบกันดีว่าปัญหามลพิษในกรุงเทพฯ</h3>
@@ -98,7 +110,15 @@
         </div>
 
     </div>
-
+    <div class="content-car-image">
+        <div class="black-car-group">
+        <div id="black-car-1"></div>
+        <div id="black-car-2"></div>
+        <hr class="rotate-white-road">
+    </div>
+        
+    
+    </div>
     <div class="content-pros">
         <div class="main-grid-pros">
             <div class="pros-block">
@@ -117,9 +137,9 @@
                         </div>
                     </div>
                     <div class="pros-grid">
-                        <div class="pros-image"></div>
+                        <div class="pros-image" id="pros-image-cloud-1"></div>
                             <div class="pros-text">
-                                <h3>1.</h3>
+                                <h3 class="pros-text-head">1.</h3>
                                 <span>
                                     ต้นไม้ของเราสามารถหายใจได้สะดวก ไม่ต้องคอยเช็คฝุ่นออกทุกเช้าอีกต่อไป
                                 </span>
@@ -143,9 +163,9 @@
                         </div>
                     </div>
                     <div class="pros-grid">
-                        <div class="pros-image"></div>
+                        <div class="pros-image" id="pros-image-cloud-2"></div>
                             <div class="pros-text">
-                                <h3>2.</h3>
+                                <h3 class="pros-text-head">2.</h3>
                                 <span>
                                     สามารถเปิกหน้าต่างได้โดยไม่รู้ผิด ไม่ต้องกลัวฝุ่นที่จะหลุดเข้ามา สามารถทำกิจกรรมในรั้วบ้านอย่างมีความสุข
                                 </span>
@@ -169,9 +189,9 @@
                         </div>
                     </div>
                     <div class="pros-grid">
-                        <div class="pros-image"></div>
+                        <div class="pros-image" id="pros-image-cloud-3"></div>
                             <div class="pros-text">
-                                <h3>3.</h3>
+                                <h3 class="pros-text-head">3.</h3>
                                 <span>
                                     เมื่อมลพิษลดลง จะสามารถทำกิจกรรในนอกบ้านได้โดยไม่ต้องกังวลเรื่องสุขภาพปอดได้สูดอากาศบริสุทธิ์
                                 </span>
@@ -195,9 +215,9 @@
                         </div>
                     </div>
                     <div class="pros-grid">
-                        <div class="pros-image"></div>
+                        <div class="pros-image" id="pros-image-cloud-4"></div>
                             <div class="pros-text">
-                                <h3>4.</h3>
+                                <h3 class="pros-text-head">4.</h3>
                                 <span>
                                     สามารถมองเห็นทิวทัศน์ของกรุงเทพฯได้กว้างขึ้น ถนนไร้ฝุ่น ไม่มีฝุ่นเกาะตามเสาไฟฟ้า ที่นั่งรอรถเมล์ ผู้คนในเมืองใช้ชีวิตได้อย่างปลอดภัย
                                 </span>
@@ -221,9 +241,9 @@
                         </div>
                     </div>
                     <div class="pros-grid">
-                        <div class="pros-image"></div>
+                        <div class="pros-image" id="pros-image-cloud-5"></div>
                             <div class="pros-text">
-                                <h3>5.</h3>
+                                <h3 class="pros-text-head">5.</h3>
                                 <span>
                                     ฝุ่น ควันลดลงทำให้อาการภูมิแพ้ลดลงตามไปด้วย ปอดแข็งแรงขึ้น ไม่ต้องเจอหน้าคุณหมอบ่อย ๆ ไม่ต้องทานยาเยอะเหมือนเก่า
                                 </span>
@@ -248,7 +268,7 @@
             <div class="gridSubWeatherReport temperatureReport">
 
                 <div class="imageAndh1">
-                    <div class="sup-image-h1 blue-box"></div>
+                    <div class="sup-image-h1"></div>
                     <h1 class="headTemperature">30°</h1>
                 </div>
 
@@ -277,25 +297,25 @@
         <hr>
         <div class="girdLowWeatherReport">
             <div class="gridInWeatherReport">
-                <div class="sup-image-col blue-box"></div>
+                <div class="sup-image-col sunset-image"></div>
                 <div class="sup-max">33</div>
                 <div class="sip=min">19</div>
                 <div class="sup-thisDay"><span>Sunday</span></div>
             </div>
             <div class="gridInWeatherReport">
-                <div class="sup-image-col blue-box"></div>
+                <div class="sup-image-col suncloud-image"></div>
                 <div class="sup-max">30</div>
                 <div class="sip=min">19</div>
                 <div class="sup-thisDay"><span>Monday</span></div>
             </div>
             <div class="gridInWeatherReport">
-                <div class="sup-image-col blue-box"></div>
+                <div class="sup-image-col suncloud-image"></div>
                 <div class="sup-max">31</div>
                 <div class="sip=min">22</div>
                 <div class="sup-thisDay"><span>Tuesday</span></div>
             </div>
             <div class="gridInWeatherReport">
-                <div class="sup-image-col blue-box"></div>
+                <div class="sup-image-col suncloud-image"></div>
                 <div class="sup-max">33</div>
                 <div class="sip=min">24</div>
                 <div class="sup-thisDay"><span>Wednesday</span></div>
@@ -311,18 +331,19 @@
         
             <div class="share-dowe-text">
                 <h2>ร่วมส่งต่อ</h2>
-                <h2>อากศที่ดีให้ผู้อื่น</h2>
+                <h2>อากาศที่ดีให้ผู้อื่น</h2>
             </div>
             <div class="grid-share">
-            <div id="share-facebook">123</div>
-            <div id="share-twitter">456</div>
-            <div id="share-line">789</div>
-            <div id="share-link">13221</div>
+            <div id="share-facebook"></div>
+            <div id="share-twitter"></div>
+            <div id="share-line"></div>
+            <div id="share-link"></div>
         </div>
         </div>
         
     </div>
     </div>
-
+    
+</div>
 </body>
 </html>
