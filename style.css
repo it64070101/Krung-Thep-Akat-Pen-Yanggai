@@ -692,6 +692,43 @@ a {
     display: flex;
 }
 
+#transport-type-text {
+    font-weight: 600;
+    text-align: left;
+    background-image: url("images/images/12_Light.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.transport-type-car {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.transport-type-car-contain {
+    display: flex;
+    height: 100%;
+}
+
+.transport-type-car-contain div {
+    display: inline-block;
+    align-self: flex-end;
+}
+
+.transport-type-car-contain div p {
+    background-color: rgba(77, 77, 77, 1);
+    color: white;
+    border-radius: 50%;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+.transport-type-car-contain img {
+    display: inline-block;
+    align-self: flex-end;
+}
+
 #calendar-sect {
     color: white;
     margin-left: 10%;
