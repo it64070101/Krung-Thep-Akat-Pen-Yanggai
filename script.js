@@ -54,3 +54,7 @@ function hidePlacesOverlay() {
     document.querySelector('.overlay-bg').style.setProperty('background', '#0001')
     document.querySelector('body').style.overflowY = 'visible';
 }
+
+function taxesPopUp(){
+    
+}
