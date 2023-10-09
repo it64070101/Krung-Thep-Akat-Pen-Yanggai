@@ -694,7 +694,7 @@ a {
     display: grid;
     grid-template-columns: repeat(7, auto);
     grid-auto-rows: 10rem;
-    padding: 10rem;
+    padding: 15rem;
 }
 
 #calendar{
