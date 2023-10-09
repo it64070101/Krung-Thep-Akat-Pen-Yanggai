@@ -692,15 +692,15 @@ a {
 }
 
 #calendar-sect{
+    margin-left: 10%;
     display: grid;
-    grid-template-columns: repeat(7, auto);
+    grid-template-columns: repeat(7, 1fr);
     grid-auto-rows: 10rem;
-    padding: 15rem;
 }
 
 #calendar{
     border-bottom: white solid;
-    display: flex;
+    display: grid;
     justify-content: flex-start;
     align-items: start;
 }
@@ -718,7 +718,7 @@ a {
 }
 #calendar-end{
     border-bottom: white solid;
-    width: 15%;
+    max-width: 15%;
     display: flex;
     justify-content: flex-start;
     align-items: start;
