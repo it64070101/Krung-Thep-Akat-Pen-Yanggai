@@ -728,6 +728,7 @@ a {
 }
 
 #calendar-sect {
+    color: white;
     margin-left: 10%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -737,6 +738,7 @@ a {
 #calendar {
     border-bottom: white solid;
     display: grid;
+    grid-auto-rows: 1.5rem;
     justify-content: flex-start;
     align-items: start;
 }
@@ -747,18 +749,25 @@ a {
     justify-content: flex-start;
     align-items: end;
 }
+#calendar-finline{
+    display: grid;
+    grid-auto-rows: 1.5rem;
+    justify-content: flex-start;
+    align-items: start;
+}
 
-#calendar-head-end {
-    border-bottom: white solid;
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
+#calendar-finline-end {
+    display: grid;
+    grid-auto-rows: 1.5rem;
+    justify-content: flex-start;
+    align-items: start;
 }
 
 #calendar-end {
     border-bottom: white solid;
     max-width: 15%;
-    display: flex;
+    display: grid;
+    grid-auto-rows: 1.5rem;
     justify-content: flex-start;
     align-items: start;
 }
