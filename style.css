@@ -690,40 +690,8 @@ a {
     display: flex;
 }
 
-#transport-type-text {
-    font-weight: 600;
-    text-align: left;
-    background-image: url("images/images/12_Light.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-.transport-type-car {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-#transport-type-smog-1 {
-    display: flex;
-    height: 100%;
-}
-
-#transport-type-smog-1 div {
-    display: inline-block;
-    align-self: flex-end;
-}
-
-#transport-type-car-1 {
-    display: flex;
-    height: 100%;
-}
-
-#transport-type-car-1 img {
-    display: inline-block;
-    align-self: flex-end;
-}
-
-#calendar-sect {
+#calendar-sect{
+    color: white;
     margin-left: 10%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -733,6 +701,7 @@ a {
 #calendar {
     border-bottom: white solid;
     display: grid;
+    grid-auto-rows: 1.5rem;
     justify-content: flex-start;
     align-items: start;
 }
@@ -743,18 +712,25 @@ a {
     justify-content: flex-start;
     align-items: end;
 }
+#calendar-finline{
+    display: grid;
+    grid-auto-rows: 1.5rem;
+    justify-content: flex-start;
+    align-items: start;
+}
 
-#calendar-head-end {
-    border-bottom: white solid;
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
+#calendar-finline-end {
+    display: grid;
+    grid-auto-rows: 1.5rem;
+    justify-content: flex-start;
+    align-items: start;
 }
 
 #calendar-end {
     border-bottom: white solid;
     max-width: 15%;
-    display: flex;
+    display: grid;
+    grid-auto-rows: 1.5rem;
     justify-content: flex-start;
     align-items: start;
 }
