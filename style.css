@@ -716,6 +716,8 @@ a {
     align-items: end;
 }
 #calendar-end{
+    border-bottom: white solid;
+    width: 15%;
     display: flex;
     justify-content: flex-start;
     align-items: start;
