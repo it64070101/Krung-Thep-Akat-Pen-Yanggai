@@ -675,8 +675,6 @@ a {
 #transport-tier-sect {
     background: rgb(140, 142, 144);
     /* background: linear-gradient(180deg, rgba(140, 142, 144, 1) 0%, rgba(60, 75, 88, 1) 100%); */
-    display: grid;
-    grid-template-columns: auto;
     text-align: center;
     padding: 10rem;
     justify-content: center;
@@ -684,45 +682,83 @@ a {
 
 #transport-type {
     display: grid;
-    grid-template-columns: repeat(7, 3rem 10rem);
+    grid-template-columns: repeat(7, auto);
+    border-bottom-style: solid;
 }
 
 #transport-type-sect {
     display: flex;
 }
 
-#calendar-sect{
+#transport-type-text {
+    font-weight: 600;
+    text-align: left;
+    background-image: url("images/images/12_Light.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.transport-type-car {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#transport-type-smog-1 {
+    display: flex;
+    height: 100%;
+}
+
+#transport-type-smog-1 div {
+    display: inline-block;
+    align-self: flex-end;
+}
+
+#transport-type-car-1 {
+    display: flex;
+    height: 100%;
+}
+
+#transport-type-car-1 img {
+    display: inline-block;
+    align-self: flex-end;
+}
+
+#calendar-sect {
     margin-left: 10%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-auto-rows: 10rem;
 }
 
-#calendar{
+#calendar {
     border-bottom: white solid;
     display: grid;
     justify-content: flex-start;
     align-items: start;
 }
-#calendar-head-start{
+
+#calendar-head-start {
     border-bottom: white solid;
     display: flex;
     justify-content: flex-start;
     align-items: end;
 }
-#calendar-head-end{
+
+#calendar-head-end {
     border-bottom: white solid;
     display: flex;
     justify-content: flex-end;
     align-items: end;
 }
-#calendar-end{
+
+#calendar-end {
     border-bottom: white solid;
     max-width: 15%;
     display: flex;
     justify-content: flex-start;
     align-items: start;
 }
+
 /* Keyframes ---------------------------------------------------------------------------------------------------- */
 
 @keyframes weather-scroll-animation {
