@@ -38,8 +38,8 @@ function setBodyScrollPosition() {
         document.querySelector('#increasing-num').innerHTML = "11,370,000"
     }
     if (document.body.dataset.y >= 7500) {
-        document.querySelector('#pcbs-text').style.setProperty('--move', 90)
-        document.querySelector('#pcbs-image').style.setProperty('--move', 140)
+        document.querySelector('#pcbs-text').style.setProperty('--move', 73)
+        document.querySelector('#pcbs-image').style.setProperty('--move', 120)
     }
 }
 

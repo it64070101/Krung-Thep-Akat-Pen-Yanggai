@@ -533,17 +533,18 @@ a {
 #pcbs-text {
     --move: 0;
     position: absolute;
-    left: calc(-40rem + var(--move) * 1rem);
-    /* left: -40rem; */
-    transition: all 5s;
+    left: calc(-30% + var(--move) * 1%);
+    /* left: -30%; */
+    transition: all 5s linear;
 }
 
 #pcbs-image {
     --move: 0;
     position: absolute;
-    left: calc(-20rem + var(--move) * 1rem);
-    /* left: 120rem; */
-    transition: all 4.5s;
+    left: calc(-10% + var(--move) * 1%);
+    /* left: -10%; */
+    transition: all 8s linear;
+    width: auto;
 }
 
 #personal-car-bad-sect-one {
