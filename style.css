@@ -703,22 +703,26 @@ a {
     grid-template-columns: auto auto;
 }
 
-#transport-type-smog-1 {
+.transport-type-car-contain {
     display: flex;
     height: 100%;
 }
 
-#transport-type-smog-1 div {
+.transport-type-car-contain div {
     display: inline-block;
     align-self: flex-end;
 }
 
-#transport-type-car-1 {
-    display: flex;
-    height: 100%;
+.transport-type-car-contain div p {
+    background-color: rgba(77, 77, 77, 1);
+    color: white;
+    border-radius: 50%;
+    margin: auto;
+    width: 50px;
+    height: 50px;
 }
 
-#transport-type-car-1 img {
+.transport-type-car-contain img {
     display: inline-block;
     align-self: flex-end;
 }
