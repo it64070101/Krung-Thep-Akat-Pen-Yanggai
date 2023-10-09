@@ -786,6 +786,7 @@ a {
     grid-auto-rows: 1.5rem;
     justify-content: flex-start;
     align-items: start;
+    text-align: left;
 }
 
 #calendar-head-start {
@@ -800,6 +801,7 @@ a {
     grid-auto-rows: 1.5rem;
     justify-content: flex-start;
     align-items: start;
+    text-align: left;
 }
 
 #calendar-finline-end {

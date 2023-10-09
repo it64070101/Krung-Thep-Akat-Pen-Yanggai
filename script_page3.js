@@ -47,7 +47,7 @@ function myMove(num) {
         is_animation_playing = false;
       } else {
         pos++; 
-        elem.style.marginBottom = pos + 'rem'; 
+        elem.style.marginTop = pos + 'rem'; 
           }
       }
   function animation_show() {
@@ -56,7 +56,7 @@ function myMove(num) {
       is_animation_playing = false;
     } else {
       pos++; 
-      elem.style.marginBottom = pos + 'rem'; 
+      elem.style.marginTop = pos + 'rem'; 
         }
     }
 
@@ -75,7 +75,7 @@ function myMove(num) {
 
         } else {
           pos--; 
-          elem.style.marginBottom = pos + 'rem'; 
+          elem.style.marginTop = pos + 'rem'; 
             }
         }
       function textshow() {
@@ -122,15 +122,29 @@ function handleScroll() {
 // Add an event listener for the 'scroll' event
 window.addEventListener('scroll', handleScroll);
 
-function setRandomPosition(element) {
-  const maxWidth = document.querySelector('.aqi-grid-pros').clientWidth;
-  const maxHeight = document.querySelector('.aqi-grid-pros').clientHeight-50;
+function setRandomPosition(element) {  
+  var maxWidth = document.querySelector('.aqi-grid-pros').clientWidth;
+  var maxHeight = document.querySelector('.aqi-grid-pros').clientHeight-50;
+  if (element.classList.contains('animation_num_1')) {
+      maxWidth = 800;
+      maxHeight = 300;
+  }
+  if (element.classList.contains('animation_num_2')) {
+    maxWidth = 1200;
+    maxHeight = 300;
+}
+if (element.classList.contains('animation_num_4')) {
+  maxWidth = 1200;
+  maxHeight = 200;
+}
+
   const left = Math.random() * (maxWidth - element.clientWidth) + 'px';
   const top = Math.random() * (maxHeight - element.clientHeight) + 'px';
   
   element.style.left = left;
   element.style.top = top;
 }
+
 function setRandomAQInumber(element){
   const setAQI = document.getElementsByClassName("blinking-text");
   for(let j of setAQI){
@@ -164,4 +178,57 @@ setInterval(() => updatePositions(1), 2000);
 setInterval(() => updatePositions(2), 3000);
 setInterval(() => updatePositions(3), 2500);
 setInterval(() => updatePositions(4), 4000);
+
+// share link
+function shareOnFacebook() {
+  const Link = 'https://youtu.be/dQw4w9WgXcQ?si=9jgJ9d1KyPGAkDZ6'; // Replace with your YouTube video URL
+
+  // Create the Facebook share URL with the YouTube link
+  const facebookShareURL = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Link)}`;
+
+  // Open a new window or tab with the share dialog
+  window.open(facebookShareURL, '_blank');
+}
+
+function shareOnTwitter() {
+  const Link = 'https://youtu.be/dQw4w9WgXcQ?si=9jgJ9d1KyPGAkDZ6'; // Replace with your YouTube video URL
+
+  // Create the Facebook share URL with the YouTube link
+  const twitterURL = `https://twitter.com/intent/tweet?url=${encodeURIComponent(Link)}`;
+
+  // Open a new window or tab with the share dialog
+  window.open(twitterURL, '_blank');
+}
+
+function shareOnLine() {
+  const Link = 'https://youtu.be/dQw4w9WgXcQ?si=9jgJ9d1KyPGAkDZ6'; // Replace with your YouTube video URL
+
+  // Create the Facebook share URL with the YouTube link
+  const lineShareURL = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(Link)}`;
+
+  // Open a new window or tab with the share dialog
+  window.open(lineShareURL, '_blank');
+}
+function shareCopyLink() {
+  const Link = 'https://youtu.be/dQw4w9WgXcQ?si=9jgJ9d1KyPGAkDZ6'; // Replace with your YouTube video URL
+
+  const textArea = document.createElement('textarea');
+  textArea.value = Link;
+
+  // Append the textarea to the document
+  document.body.appendChild(textArea);
+
+  // Select the text in the textarea
+  textArea.select();
+  textArea.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text to the clipboard
+  document.execCommand('copy');
+
+  // Remove the textarea from the document
+  document.body.removeChild(textArea);
+
+  // Inform the user that the link has been copied
+  alert('YouTube link has been copied to the clipboard');
+}
 
