@@ -553,6 +553,10 @@ a {
     /* transform: translateX(-10vw); */
 }
 
+#pcbs-image img {
+    max-width: none;
+}
+
 #personal-car-bad-sect-one {
     background-color: rgba(255, 69, 26, 1);
     border-radius: 50%;
