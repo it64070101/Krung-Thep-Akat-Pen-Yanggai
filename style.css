@@ -77,7 +77,7 @@ a {
     font-size: 4rem;
     width: 3904px;
     animation-name: scrolling-text-anim;
-    animation-duration: 6s;
+    animation-duration: 12s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -538,6 +538,8 @@ a {
     left: calc(-30% + var(--move) * 1%);
     /* left: -30%; */
     transition: all 5s linear;
+    /* animation: text-move 8s linear; */
+    /* transform: translateX(40vw); */
 }
 
 #pcbs-image {
@@ -547,6 +549,8 @@ a {
     /* left: -10%; */
     transition: all 8s linear;
     width: auto;
+    /* animation: car-move 8s linear; */
+    /* transform: translateX(-10vw); */
 }
 
 #personal-car-bad-sect-one {
@@ -698,6 +702,18 @@ a {
     background-image: url("images/images/12_Light.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+
+#personal-car-bad-sect h1 {
+    /* font-size: 1rem; */
+}
+
+#personal-car-bad-sect h3 {
+    font-size: 3rem;
+}
+
+#personal-car-bad-sect p {
+    font-size: 1.5rem;
 }
 
 .transport-type-car {
@@ -924,6 +940,26 @@ a {
 
     100% {
         transform: translateX(0%);
+    }
+}
+
+@keyframes car-move {
+    0% {
+        transform: translateX(-10vw);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes text-move {
+    0% {
+        transform: translateX(-10vw);
+    }
+
+    100% {
+        transform: translateX(40vw);
     }
 }
 
