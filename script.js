@@ -43,7 +43,15 @@ function setBodyScrollPosition() {
     }
 }
 
-function showPlacesOverlay() {
+function showPlacesOverlay(location_pin) {
+    console.log(document.documentElement.clientWidth)
+    if (document.documentElement.clientWidth <= 768) {
+        location_name = `images/images/` + location_pin + "_phone.png"
+    }
+    else {
+        location_name = `images/images/` + location_pin + "_desktop.png"
+    }
+    document.querySelector('.overlay').style.setProperty('background-image', `url(${location_name})`)
     document.querySelector('.overlay-bg').style.setProperty('top', '0%')
     document.querySelector('.overlay-bg').style.setProperty('background', '#000b')
     document.querySelector('body').style.overflowY = 'hidden';
@@ -55,6 +63,6 @@ function hidePlacesOverlay() {
     document.querySelector('body').style.overflowY = 'visible';
 }
 
-function taxesPopUp(){
-    
+function taxesPopUp() {
+
 }

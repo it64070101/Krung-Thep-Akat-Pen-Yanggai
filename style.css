@@ -34,6 +34,14 @@ a {
     font-size: 1rem;
 }
 
+hr {
+    border: none;
+    height: 6px;
+    background: white;
+    background: repeating-linear-gradient(90deg, white, white 3vw, transparent 3vw, transparent 6vw);
+    margin-bottom: 10vh;
+}
+
 /* Class ---------------------------------------------------------------------------------------------------- */
 
 .container {
@@ -199,12 +207,40 @@ a {
     cursor: pointer;
 }
 
-.svg.car {
-    --position: 0;
+.car-set {
     position: absolute;
+    width: 100%;
+}
+
+.car-set.set1 {
     top: 70%;
-    left: calc(0% + (var(--position) / 10) * 1%);
+}
+
+.car-set.set2 {
+    top: 30%;
+    left: 5%;
+    transform: rotate(30deg);
+}
+
+.car-set.set1>img.car {
+    --position: 0vw;
+    position: relative;
+    left: -20vw;
     width: 10vw;
+    animation: car-move 2s;
+}
+
+.car-set.set2>img.car {
+    --position: 10vw;
+    position: relative;
+    left: calc(-20vw + var(--position));
+    width: 5vw;
+    animation: car-move 2s;
+}
+
+hr.car {
+    --position: 0;
+    width: 50%;
 }
 
 .svg.logo {
@@ -215,6 +251,7 @@ a {
     width: 800px;
     height: 500px;
     background-image: url('images/images/overlay_bg_desktop.png');
+    background-repeat: no-repeat;
     position: absolute;
     transition: all .3s;
     z-index: 3;
@@ -222,6 +259,10 @@ a {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.overlay:hover {
+    cursor: pointer;
 }
 
 .overlay-bg {
@@ -949,11 +990,11 @@ a {
 
 @keyframes car-move {
     0% {
-        transform: translateX(-10vw);
+        left: -100vw;
     }
 
     100% {
-        transform: translateX(100vw);
+        left: calc(-20vw + var(--position));
     }
 }
 
@@ -1062,6 +1103,10 @@ a {
         font-size: 2rem;
     }
 
+    .car-set {
+        top: 40%
+    }
+
     .map-lo {
         /* background: #fd3e00; */
         background-size: cover;
@@ -1121,9 +1166,12 @@ a {
         font-size: 5vw;
     }
 
-    .svg.car {
-        width: 20vw;
+    .car-set.set1 {
         top: 40%;
+    }
+
+    .car-set.set2 {
+        top: 90%;
     }
 
 }
