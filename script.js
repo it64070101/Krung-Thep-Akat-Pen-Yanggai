@@ -27,9 +27,6 @@ document.addEventListener("scroll", setBodyScrollPosition);
 number = 0
 function setBodyScrollPosition() {
     document.body.dataset.y = window.scrollY
-    if (document.body.dataset.y <= 300) {
-        document.querySelector('.svg.car').style.setProperty('--position', document.body.dataset.y)
-    }
     if ((document.body.dataset.y * 10 - 7630) <= 11370) {
 
         document.querySelector('#increasing-num').innerHTML = (document.body.dataset.y * 10 - 7630).toLocaleString("en-US") + ",000"
@@ -40,6 +37,9 @@ function setBodyScrollPosition() {
     if (document.body.dataset.y >= 7500) {
         document.querySelector('#pcbs-text').style.setProperty('--move', 73)
         document.querySelector('#pcbs-image').style.setProperty('--move', 120)
+    }
+    if (100 - (document.body.dataset.y / 100) >= 20) {
+        document.querySelector('#background-2').style.setProperty('--light', document.body.dataset.y / 100)
     }
 }
 
