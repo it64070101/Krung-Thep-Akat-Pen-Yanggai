@@ -1044,7 +1044,7 @@ margin: auto;
     grid-template-rows: 12rem 10rem;
 }
 }
-@media(320px<= width<=376px) {
+@media(width<=376px) {
     body{
         font-size: 9.5px;
     }
