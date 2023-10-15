@@ -300,6 +300,61 @@ hr.car {
     opacity: 100%;
 }
 
+.c3 {
+    top: 120%;
+    left: 70%;
+    opacity: 50%;
+    animation: none;
+}
+
+.c4 {
+    top: 180%;
+    left: 0%;
+    opacity: 50%;
+    animation: none;
+}
+
+.c5 {
+    top: 300%;
+    left: 60%;
+    opacity: 50%;
+    animation: none;
+}
+
+.static-cloud {
+    position: absolute;
+}
+
+.sc1 {
+    top: 100%;
+    left: -40%;
+    opacity: 50%;
+}
+
+.sc2 {
+    top: 250%;
+    left: 40%;
+    opacity: 50%;
+}
+
+.sc3 {
+    top: 350%;
+    left: -30%;
+    opacity: 50%;
+}
+
+.sc4 {
+    top: 800%;
+    left: 0%;
+    opacity: 50%;
+}
+
+.sc5 {
+    top: 950%;
+    left: 30%;
+    opacity: 50%;
+}
+
 /* ID ---------------------------------------------------------------------------------------------------- */
 
 #background-1 {
@@ -980,15 +1035,15 @@ hr.car {
 
 @keyframes cloud-anim-lr {
     0% {
-        transform: translateX(0%);
+        transform: translateX(0vw);
     }
 
     50% {
-        transform: translateX(100%);
+        transform: translateX(100vw);
     }
 
     100% {
-        transform: translateX(0%);
+        transform: translateX(0vw);
     }
 }
 
