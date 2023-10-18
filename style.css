@@ -635,9 +635,10 @@ hr.car {
 #pcbs-text {
     --move: 0;
     position: absolute;
-    left: calc(-30% + var(--move) * 1%);
+    left: calc(50% * var(--move));
+    transform: translate(calc(-100% + 50% * var(--move)), 0%);
     /* left: -30%; */
-    transition: all 5s linear;
+    transition: all calc(5s * var(--move)) linear;
     /* animation: text-move 8s linear; */
     /* transform: translateX(40vw); */
 }
@@ -656,7 +657,7 @@ hr.car {
 #pcbs-text-bottom {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 1rem;
+    gap: 10px;
 }
 
 #pcbs-image img {
@@ -666,6 +667,7 @@ hr.car {
 #personal-car-bad-sect-one {
     background-color: rgba(255, 69, 26, 1);
     border-radius: 50%;
+    width: fit-content;
     aspect-ratio: 1 / 1;
     display: inline-block;
     text-align: center;
