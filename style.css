@@ -653,6 +653,12 @@ hr.car {
     /* transform: translateX(-10vw); */
 }
 
+#pcbs-text-bottom {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
 #pcbs-image img {
     max-width: none;
 }
@@ -660,8 +666,9 @@ hr.car {
 #personal-car-bad-sect-one {
     background-color: rgba(255, 69, 26, 1);
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    aspect-ratio: 1 / 1;
+    display: inline-block;
+    text-align: center;
 }
 
 #personal-car-bad-sect-img {

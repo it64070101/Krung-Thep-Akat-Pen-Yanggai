@@ -27,6 +27,7 @@ document.addEventListener("scroll", setBodyScrollPosition);
 number = 0
 function setBodyScrollPosition() {
     document.body.dataset.y = window.scrollY
+    document.body.dataset.h = window.innerHeight
     if ((document.body.dataset.y * 10 - 7630) <= 11370) {
 
         document.querySelector('#increasing-num').innerHTML = (document.body.dataset.y * 10 - 7630).toLocaleString("en-US") + ",000"
@@ -34,7 +35,9 @@ function setBodyScrollPosition() {
     else if (document.body.dataset.y > 1900) {
         document.querySelector('#increasing-num').innerHTML = "11,370,000"
     }
-    if (document.body.dataset.y >= 7500) {
+    let top = document.querySelector('#personal-car-bad-sect').getBoundingClientRect().top
+	let topWithOffset = top - parseInt(document.body.dataset.h)
+    if (topWithOffset<0) {
         document.querySelector('#pcbs-text').style.setProperty('--move', 73)
         document.querySelector('#pcbs-image').style.setProperty('--move', 120)
     }
