@@ -36,8 +36,8 @@ function setBodyScrollPosition() {
         document.querySelector('#increasing-num').innerHTML = "11,370,000"
     }
     let top = document.querySelector('#personal-car-bad-sect').getBoundingClientRect().top
-	let topWithOffset = top - parseInt(document.body.dataset.h)
-    if (topWithOffset<0) {
+    let topWithOffset = top - parseInt(document.body.dataset.h)
+    if (topWithOffset < 0) {
         document.querySelector('#pcbs-text').style.setProperty('--move', 1)
         document.querySelector('#pcbs-image').style.setProperty('--move', 120)
     }

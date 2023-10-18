@@ -639,7 +639,7 @@ hr.car {
 #pcbs-text {
     --move: 0;
     position: absolute;
-    left: calc(50% * var(--move));
+    left: calc(50% * var(--move) + -20% * (1 - var(--move)));
     transform: translate(calc(-100% + 50% * var(--move)), 0%);
     /* left: -30%; */
     transition: all calc(5s * var(--move)) linear;
@@ -653,19 +653,25 @@ hr.car {
     left: calc(-10% + var(--move) * 1%);
     /* left: -10%; */
     transition: all 8s linear;
-    width: auto;
     /* animation: car-move 8s linear; */
     /* transform: translateX(-10vw); */
+}
+
+#pcbs-text-top {
+    font-weight: normal;
+    font-size: 2rem;
 }
 
 #pcbs-text-bottom {
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
+    font-size: 2rem;
 }
 
 #pcbs-image img {
     max-width: none;
+    height: 7rem;
 }
 
 #personal-car-bad-sect-one {
@@ -685,6 +691,14 @@ hr.car {
 #pcbs-text-below {
     text-align: center;
     padding-top: 10rem;
+}
+
+#pcbs-text-below p {
+    font-size: 1rem;
+}
+
+#pcbs-text-below-head {
+    font-weight: bold;
 }
 
 #go-to-transport-sect {
@@ -829,14 +843,6 @@ hr.car {
 
 #personal-car-bad-sect h1 {
     /* font-size: 1rem; */
-}
-
-#personal-car-bad-sect h3 {
-    font-size: 3rem;
-}
-
-#personal-car-bad-sect p {
-    font-size: 1.5rem;
 }
 
 .transport-type-car {
@@ -1301,4 +1307,41 @@ hr.car {
         display: block;
     }
 
+    #pcbs-text-top {
+        font-size: 1.5rem;
+    }
+
+    #pcbs-text-bottom {
+        font-size: 1.5rem;
+    }
+
+    #pcbs-text-below {
+        padding-top: 7rem;
+    }
+
+    #pcbs-image {
+        transition: all 7s linear;
+    }
+
+    #pcbs-image img {
+        height: 5rem;
+    }
+}
+
+@media(width<=450px) {
+    #pcbs-text-top {
+        font-size: 1rem;
+    }
+
+    #pcbs-text-bottom {
+        font-size: 1rem;
+    }
+
+    #pcbs-text-below {
+        padding-top: 5rem;
+    }
+
+    #pcbs-image img {
+        height: 3rem;
+    }
 }
