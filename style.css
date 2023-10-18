@@ -786,8 +786,14 @@ hr.car {
     /* background: rgb(140, 142, 144); */
     /* background: linear-gradient(180deg, rgba(140, 142, 144, 1) 0%, rgba(60, 75, 88, 1) 100%); */
     text-align: center;
-    padding: 10rem;
+    padding: 2rem;
     justify-content: center;
+}
+
+#transport-tier-sect>p {
+    font-size: 4rem;
+    color: white;
+
 }
 
 #transport-type {
@@ -848,6 +854,14 @@ hr.car {
 .transport-type-car-contain img {
     display: inline-block;
     align-self: flex-end;
+}
+
+.calendar-mobile {
+    display: none;
+}
+
+.calendar-desktop {
+    display: block;
 }
 
 #transport-type-car-contain-smog-1 {
@@ -1162,6 +1176,11 @@ hr.car {
         font-size: 2rem;
     }
 
+    #transport-tier-sect>p {
+        color: white;
+        /* font-size: 2rem; */
+    }
+
     .car-set {
         top: 40%
     }
@@ -1231,6 +1250,14 @@ hr.car {
 
     .car-set.set2 {
         top: 90%;
+    }
+
+    .calendar-desktop {
+        display: none;
+    }
+
+    .calendar-mobile {
+        display: block;
     }
 
 }
