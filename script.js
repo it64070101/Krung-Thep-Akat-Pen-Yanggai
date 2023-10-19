@@ -66,6 +66,22 @@ function hidePlacesOverlay() {
     document.querySelector('body').style.overflowY = 'visible';
 }
 
-function taxesPopUp() {
+function showReceiptOverlay(receipt) {
+    console.log(document.documentElement.clientWidth)
+    if (document.documentElement.clientWidth <= 768) {
+        receipt_name = `images/images/` + receipt + ".png"
+    }
+    else {
+        receipt_name = `images/images/` + receipt + ".png"
+    }
+    document.querySelector('.receipt-overlay').style.setProperty('background-image', `url(${receipt_name})`)
+    document.querySelector('.receipt-bg').style.setProperty('top', '0%')
+    document.querySelector('.receipt-bg').style.setProperty('background', '#000b')
+    document.querySelector('body').style.overflowY = 'hidden';
+}
 
+function hideReceiptOverlay() {
+    document.querySelector('.receipt-bg').style.setProperty('top', '-100%')
+    document.querySelector('.receipt-bg').style.setProperty('background', '#0001')
+    document.querySelector('body').style.overflowY = 'visible';
 }
