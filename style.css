@@ -706,6 +706,8 @@ hr.car {
 #go-to-transport-sect {
     /* background: rgb(61, 75, 88);
     background: linear-gradient(180deg, rgba(61, 75, 88, 1) 0%, rgba(32, 34, 37, 1) 100%); */
+    width: 50%;
+    margin: auto;
 }
 
 #main-icon {
@@ -1622,5 +1624,9 @@ hr.car {
 
     #noti5 {
         width: 75%;
+    }
+
+    #go-to-transport-sect {
+        width: 80%;
     }
 }

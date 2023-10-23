@@ -44,6 +44,8 @@ function setBodyScrollPosition() {
     if (100 - (document.body.dataset.y / 100) >= 20) {
         document.querySelector('#background-2').style.setProperty('--light', document.body.dataset.y / 100)
     }
+    // document.querySelector('#background-2').style.setProperty('--light', document.body.dataset.y / 100)
+
     if (document.body.dataset.y >= 7930) {
         console.log('right')
         document.querySelector('#transport-type-car-contain-smog-1').style.setProperty('animation', 'smog-move 2s')
@@ -103,12 +105,7 @@ function hidePlacesOverlay() {
 
 function showReceiptOverlay(receipt) {
     console.log(document.documentElement.clientWidth)
-    if (document.documentElement.clientWidth <= 768) {
-        receipt_name = `images/images/` + receipt + ".png"
-    }
-    else {
-        receipt_name = `images/images/` + receipt + ".png"
-    }
+    receipt_name = `images/images/` + receipt + ".png"
     document.getElementById("receipt-bg-img").src=receipt_name;
     document.querySelector('.receipt-bg').style.setProperty('top', '0%')
     document.querySelector('.receipt-bg').style.setProperty('background', '#000b')
