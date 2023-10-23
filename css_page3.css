@@ -661,25 +661,25 @@ margin: auto;
 }
 #share-facebook{
     margin: 0;
-    background: url('images/images/logo_facebook.png');
+    background: url('images/svgs/icon _Facebook Square.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 #share-twitter{
     margin: 0;
-    background: url(images/images/logo_twitter-x.png);
+    background: url('images/svgs/icon _Twitter Square.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 #share-line{
     margin: 0;
-    background: url(images/images/logo_Line.png);
+    background: url('images/svgs/icon _line.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 #share-link{
     margin: 0;
-    background: url(images/images/logo_share.png);
+    background: url('images/svgs/icon _link.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -1043,6 +1043,39 @@ margin: auto;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 12rem 10rem;
 }
+#image-1{   
+    z-index: 0;
+    width: 75rem;
+    top: -25rem;
+    left: -15rem;
+}
+#image-2{   
+    z-index: 0;
+    width: 75rem;
+    top: 10rem;
+    left: -50rem;
+}
+#image-3{   
+    width: 70rem;
+    top: 90rem;
+    left: -40rem;
+}
+#image-4{   
+    width: 60rem;
+    top: 260rem;
+    left: -15rem;
+}
+#image-5{   
+    width: 50rem;
+    top: 320rem;
+    left: -25rem;
+}
+#image-6{   
+    width: 100rem;
+    top: 365rem;
+    left: -50rem;
+    overflow: hidden;
+}
 }
 @media(width<=376px) {
     body{
@@ -1227,16 +1260,38 @@ margin: auto;
     grid-column: 1/ span 2;
     font-size: 0.7rem;
 }
+#image-1{   
+    z-index: 0;
+    width: 75rem;
+    top: -25rem;
+    left: -15rem;
+}
 #image-2{   
     z-index: 0;
-    width: 150rem;
+    width: 75rem;
     top: 10rem;
-    left: -85rem;
+    left: -50rem;
 }
 #image-3{   
-    width: 150rem;
-    top: 110rem;
-    left: -95rem;
+    width: 70rem;
+    top: 90rem;
+    left: -40rem;
+}
+#image-4{   
+    width: 60rem;
+    top: 260rem;
+    left: -15rem;
+}
+#image-5{   
+    width: 50rem;
+    top: 300rem;
+    left: -15rem;
+}
+#image-6{   
+    width: 200rem;
+    top: 315rem;
+    left: -70rem;
+    overflow: hidden;
 }
 .gird-choose-sub-cleanVehicle-content {
     display: grid;

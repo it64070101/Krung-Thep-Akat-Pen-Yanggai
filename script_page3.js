@@ -4,6 +4,11 @@ var pos = -35;
 var oldTarget_name = "";
 var oldTarget_num = 88;
 
+window.onload = function() {
+  setTimeout(function() {
+      window.scrollTo(0, 0);
+  }, 1); 
+}
 function myMove(num) {
     if (is_animation_playing) {
       return; // Don't start a new animation if one is already playing
@@ -122,6 +127,9 @@ function handleScroll() {
 // Add an event listener for the 'scroll' event
 window.addEventListener('scroll', handleScroll);
 
+
+
+
 function setRandomPosition(element) {  
   var maxWidth = document.querySelector('.aqi-grid-pros').clientWidth;
   var maxHeight = document.querySelector('.aqi-grid-pros').clientHeight-50;
@@ -179,41 +187,38 @@ setInterval(() => updatePositions(2), 3000);
 setInterval(() => updatePositions(3), 2500);
 setInterval(() => updatePositions(4), 4000);
 
-// share link
+// share link  
+const Link = 'https://youtu.be/dQw4w9WgXcQ?si=9jgJ9d1KyPGAkDZ6'; // Replace with your YouTube video URL
+var currentURL = window.location.origin; // ได้ URL ของ origin (ตัวอย่าง: https://www.yourwebsite.com)
+var urlToShare = currentURL + '/index.html'; // ผสานกับ path ของ index.html
 function shareOnFacebook() {
-  const Link = 'https://youtu.be/dQw4w9WgXcQ?si=9jgJ9d1KyPGAkDZ6'; // Replace with your YouTube video URL
-
   // Create the Facebook share URL with the YouTube link
-  const facebookShareURL = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Link)}`;
-
+  const facebookShareURL = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(urlToShare)}`;
   // Open a new window or tab with the share dialog
   window.open(facebookShareURL, '_blank');
 }
 
 function shareOnTwitter() {
-  const Link = 'https://youtu.be/dQw4w9WgXcQ?si=9jgJ9d1KyPGAkDZ6'; // Replace with your YouTube video URL
 
   // Create the Facebook share URL with the YouTube link
-  const twitterURL = `https://twitter.com/intent/tweet?url=${encodeURIComponent(Link)}`;
+  const twitterURL = `https://twitter.com/intent/tweet?url=${encodeURIComponent(urlToShare)}`;
 
   // Open a new window or tab with the share dialog
   window.open(twitterURL, '_blank');
 }
 
 function shareOnLine() {
-  const Link = 'https://youtu.be/dQw4w9WgXcQ?si=9jgJ9d1KyPGAkDZ6'; // Replace with your YouTube video URL
 
   // Create the Facebook share URL with the YouTube link
-  const lineShareURL = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(Link)}`;
+  const lineShareURL = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(urlToShare)}`;
 
   // Open a new window or tab with the share dialog
   window.open(lineShareURL, '_blank');
 }
 function shareCopyLink() {
-  const Link = 'https://youtu.be/dQw4w9WgXcQ?si=9jgJ9d1KyPGAkDZ6'; // Replace with your YouTube video URL
 
   const textArea = document.createElement('textarea');
-  textArea.value = Link;
+  textArea.value = urlToShare;
 
   // Append the textarea to the document
   document.body.appendChild(textArea);
@@ -231,4 +236,3 @@ function shareCopyLink() {
   // Inform the user that the link has been copied
   alert('YouTube link has been copied to the clipboard');
 }
-
