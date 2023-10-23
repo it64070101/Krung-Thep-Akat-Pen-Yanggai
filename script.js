@@ -53,38 +53,31 @@ function setBodyScrollPosition() {
         document.querySelector('#transport-type-car-contain-smog-5').style.setProperty('animation', 'smog-move 2s')
         document.querySelector('#transport-type-car-contain-smog-6').style.setProperty('animation', 'smog-move 2s')
     }
-    if (document.body.getBoundingClientRect().width <= 460){
-        if (document.getElementById("noti1").getBoundingClientRect().y <= 1000){
-            document.querySelector('#noti1').style.setProperty('left', '16.5%')
-        }
-        if (document.getElementById("noti2").getBoundingClientRect().y <= 1000){
-            document.querySelector('#noti2').style.setProperty('left', '15%')
-        }
-        if (document.getElementById("noti3").getBoundingClientRect().y <= 1000){
-            document.querySelector('#noti3').style.setProperty('left', '15%')
-        }
-        if (document.getElementById("noti4").getBoundingClientRect().y <= 1000){
-            document.querySelector('#noti4').style.setProperty('left', '15%')
-        }
-        if (document.getElementById("noti5").getBoundingClientRect().y <= 1000){
-            document.querySelector('#noti5').style.setProperty('left', '15%')
-        }
-    } else {
-        if (document.getElementById("noti1").getBoundingClientRect().y <= 650){
-            document.querySelector('#noti1').style.setProperty('left', '26.5%')
-        }
-        if (document.getElementById("noti2").getBoundingClientRect().y <= 650){
-            document.querySelector('#noti2').style.setProperty('left', '25%')
-        }
-        if (document.getElementById("noti3").getBoundingClientRect().y <= 650){
-            document.querySelector('#noti3').style.setProperty('left', '25%')
-        }
-        if (document.getElementById("noti4").getBoundingClientRect().y <= 650){
-            document.querySelector('#noti4').style.setProperty('left', '25%')
-        }
-        if (document.getElementById("noti5").getBoundingClientRect().y <= 650){
-            document.querySelector('#noti5').style.setProperty('left', '25%')
-        }
+    // Noti check and move
+    let notitop1 = document.querySelector('#noti1').getBoundingClientRect().top
+    let  notitopWithOffset1 = notitop1 - parseInt(document.body.dataset.h)
+    if (notitopWithOffset1 < 0) {
+        document.querySelector('#noti1').style.setProperty('--movenoti1', 1)
+    }
+    let notitop2 = document.querySelector('#noti2').getBoundingClientRect().top
+    let  notitopWithOffset2 = notitop2 - parseInt(document.body.dataset.h)
+    if (notitopWithOffset2 < 0) {
+        document.querySelector('#noti2').style.setProperty('--movenoti2', 1)
+    }
+    let notitop3 = document.querySelector('#noti3').getBoundingClientRect().top
+    let  notitopWithOffset3 = notitop3 - parseInt(document.body.dataset.h)
+    if (notitopWithOffset3 < 0) {
+        document.querySelector('#noti3').style.setProperty('--movenoti3', 1)
+    }
+    let notitop4 = document.querySelector('#noti4').getBoundingClientRect().top
+    let  notitopWithOffset4 = notitop4 - parseInt(document.body.dataset.h)
+    if (notitopWithOffset4 < 0) {
+        document.querySelector('#noti4').style.setProperty('--movenoti4', 1)
+    }
+    let notitop5 = document.querySelector('#noti5').getBoundingClientRect().top
+    let  notitopWithOffset5 = notitop5 - parseInt(document.body.dataset.h)
+    if (notitopWithOffset5 < 0) {
+        document.querySelector('#noti5').style.setProperty('--movenoti5', 1)
     }
 }
 

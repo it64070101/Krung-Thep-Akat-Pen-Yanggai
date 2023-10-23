@@ -1006,43 +1006,48 @@ hr.car {
     align-items: start;
 }
 
-#notif-sect {
-    left: 50%;
-    transition: all 1s;
-}
-
 #noti1 {
+    --movenoti1: 0;
     position: relative;
-    left: 100%;
+    left: calc(100% - 50% * var(--movenoti1));
+    transform: translate(calc(-50% * var(--movenoti1)));
     margin-bottom: 3.5%;
     width: 47.5%;
     transition: all 0.3s;
 }
 
 #noti2 {
+    --movenoti2: 0;
     position: relative;
-    left: 100%;
+    left: calc(100% - 50% * var(--movenoti2));
+    transform: translate(calc(-50% * var(--movenoti2)));
     width: 50%;
     transition: all 0.3s;
 }
 
 #noti3 {
+    --movenoti3: 0;
     position: relative;
-    left: 100%;
+    left: calc(100% - 50% * var(--movenoti3));
+    transform: translate(calc(-50% * var(--movenoti3)));
     width: 50%;
     transition: all 0.3s;
 }
 
 #noti4 {
+    --movenoti4: 0;
     position: relative;
-    left: 100%;
+    left: calc(100% - 50% * var(--movenoti4));
+    transform: translate(calc(-50% * var(--movenoti4)));
     width: 50%;
     transition: all 0.3s;
 }
 
 #noti5 {
+    --movenoti5: 0;
     position: relative;
-    left: 100%;
+    left: calc(100% - 50% * var(--movenoti5));
+    transform: translate(calc(-50% * var(--movenoti5)));
     width: 50%;
     transition: all 0.3s;
 }
