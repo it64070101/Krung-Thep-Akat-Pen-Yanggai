@@ -822,7 +822,6 @@ hr.car {
 #transport-tier-sect>p {
     font-size: 4rem;
     color: white;
-
 }
 
 #transport-type {
@@ -847,13 +846,13 @@ hr.car {
     /* font-size: 1rem; */
 }
 
-#calendar-text{
-    background: rgb(154, 154, 154); 
-    color:rgba(115, 115, 115, 1); 
-    border-radius: 1rem; 
-    height: 3rem; 
-    display: flex; 
-    justify-content: center; 
+#calendar-text {
+    background: rgb(154, 154, 154);
+    color: rgba(115, 115, 115, 1);
+    border-radius: 1rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -1279,14 +1278,14 @@ hr.car {
     #running-number-info-aqi {
         width: 80%;
     }
-    
+
 }
 
 @media(width<=768px) {
     #running-number-info-1 {
         padding: 0;
     }
-    
+
     #graph-sect-top {
         font-size: 1.5rem;
     }
@@ -1433,6 +1432,14 @@ hr.car {
         height: 5rem;
     }
 
+    #transport-tier-sect>p {
+        font-size: 3rem;
+    }
+
+    #transport-tier-sect-text-below p {
+        font-size: 0.75rem;
+    }
+
     #transport-type {
         grid-template-columns: auto;
         /* background-image: url("images/images/12_Light.png");
@@ -1482,6 +1489,7 @@ hr.car {
 }
 
 @media(width<=451px) {
+
     #running-number-info-1 p:nth-child(1),
     #running-number-info-1 p:nth-child(3) {
         font-size: 1.5rem;
@@ -1499,7 +1507,7 @@ hr.car {
     #running-number-info-3-head {
         font-size: 1rem;
     }
-    
+
     #running-number-info-3-sub {
         font-size: 0.75rem;
     }
@@ -1520,6 +1528,14 @@ hr.car {
 
     #graph-sect-top {
         font-size: 1rem;
+    }
+
+    #transport-tier-sect>p {
+        font-size: 2rem;
+    }
+
+    #transport-tier-sect-text-below p {
+        font-size: 0.5rem;
     }
 
     #pcbs-text-top {
