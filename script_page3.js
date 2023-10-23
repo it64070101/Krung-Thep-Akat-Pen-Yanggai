@@ -163,14 +163,13 @@ function setRandomAQInumber(element){
   }
 }
 
-
-
 function updatePositions(animationNum) {
   const textElements = document.querySelectorAll('.animation_num_' + animationNum);
  
   textElements.forEach((element) => {
       setRandomPosition(element);
       setRandomAQInumber(element);
+      
   });
 }
 

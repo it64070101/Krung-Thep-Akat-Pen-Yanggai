@@ -118,3 +118,36 @@ function hideReceiptOverlay() {
     document.querySelector('body').style.overflowY = 'visible';
 }
 
+function setRandomAQInumber(element){
+    const setAQI = document.getElementsByClassName("blinking-text");
+    for(let j of setAQI){
+        const min = 50;
+        const max = 120;
+        const randomInteger = Math.floor(Math.random() * (max - min + 1)) + min;
+        element.innerHTML = `<h4>AQI</h4><span class="aqi-show">${randomInteger}</span>`;
+    }
+  }
+  
+  
+  function updatePositions(animationNum) {
+    const textElements = document.querySelectorAll('.animation_num_' + animationNum);
+   
+    textElements.forEach((element) => {
+        setRandomAQInumber(element);
+    });
+  }
+  
+  
+  // Initial positioning for each animation group
+  updatePositions(1);
+  updatePositions(2);
+  updatePositions(3);
+  updatePositions(4);
+  
+  // Periodically update positions for each animation group
+  setInterval(() => updatePositions(1), 2000);
+  setInterval(() => updatePositions(2), 3000);
+  setInterval(() => updatePositions(3), 2500);
+  setInterval(() => updatePositions(4), 4000);
+
+  
