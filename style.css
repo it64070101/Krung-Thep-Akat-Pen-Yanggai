@@ -977,6 +977,10 @@ hr.car {
     top: -100%;
 }
 
+.calendar-bottom{
+    display: flex;
+}
+
 #calendar {
     border-bottom: white solid;
     display: grid;
