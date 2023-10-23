@@ -44,6 +44,40 @@ function setBodyScrollPosition() {
     if (100 - (document.body.dataset.y / 100) >= 20) {
         document.querySelector('#background-2').style.setProperty('--light', document.body.dataset.y / 100)
     }
+    if (document.body.getBoundingClientRect().width <= 460){
+        if (document.getElementById("noti1").getBoundingClientRect().y <= 1000){
+            document.querySelector('#noti1').style.setProperty('left', '16.5%')
+        }
+        if (document.getElementById("noti2").getBoundingClientRect().y <= 1000){
+            document.querySelector('#noti2').style.setProperty('left', '15%')
+        }
+        if (document.getElementById("noti3").getBoundingClientRect().y <= 1000){
+            document.querySelector('#noti3').style.setProperty('left', '15%')
+        }
+        if (document.getElementById("noti4").getBoundingClientRect().y <= 1000){
+            document.querySelector('#noti4').style.setProperty('left', '15%')
+        }
+        if (document.getElementById("noti5").getBoundingClientRect().y <= 1000){
+            document.querySelector('#noti5').style.setProperty('left', '15%')
+        }
+    } else {
+        if (document.getElementById("noti1").getBoundingClientRect().y <= 650){
+            document.querySelector('#noti1').style.setProperty('left', '26.5%')
+        }
+        if (document.getElementById("noti2").getBoundingClientRect().y <= 650){
+            document.querySelector('#noti2').style.setProperty('left', '25%')
+        }
+        if (document.getElementById("noti3").getBoundingClientRect().y <= 650){
+            document.querySelector('#noti3').style.setProperty('left', '25%')
+        }
+        if (document.getElementById("noti4").getBoundingClientRect().y <= 650){
+            document.querySelector('#noti4').style.setProperty('left', '25%')
+        }
+        if (document.getElementById("noti5").getBoundingClientRect().y <= 650){
+            document.querySelector('#noti5').style.setProperty('left', '25%')
+        }
+    }
+    
 }
 
 function showPlacesOverlay(location_pin) {
@@ -85,3 +119,4 @@ function hideReceiptOverlay() {
     document.querySelector('.receipt-bg').style.setProperty('background', '#0001')
     document.querySelector('body').style.overflowY = 'visible';
 }
+

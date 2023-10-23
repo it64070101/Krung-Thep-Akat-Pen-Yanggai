@@ -1006,6 +1006,43 @@ hr.car {
     align-items: start;
 }
 
+#notif-sect{
+    left:50%;
+    transition: all 1s;
+}
+
+#noti1{
+    position: relative;
+    left: 100%;
+    margin-bottom: 3.5%;
+    width: 47.5%;
+    transition: all 0.3s;
+}
+#noti2{
+    position: relative;
+    left: 100%;
+    width: 50%;
+    transition: all 0.3s;
+}
+#noti3{
+    position: relative;
+    left: 100%;
+    width: 50%;
+    transition: all 0.3s;
+}
+#noti4{
+    position: relative;
+    left: 100%;
+    width: 50%;
+    transition: all 0.3s;
+}
+#noti5{
+    position: relative;
+    left: 100%;
+    width: 50%;
+    transition: all 0.3s;
+}
+
 /* Keyframes ---------------------------------------------------------------------------------------------------- */
 
 @keyframes weather-scroll-animation {
@@ -1361,7 +1398,7 @@ hr.car {
     }
 }
 
-@media(width<=450px) {
+@media(width<=451px) {
     #pcbs-text-top {
         font-size: 1rem;
     }
@@ -1377,4 +1414,21 @@ hr.car {
     #pcbs-image img {
         height: 3rem;
     }
+
+    #noti1 {
+        width: 72.25%;
+    }
+    #noti2 {
+        width: 75%;
+    }
+    #noti3 {
+        width: 75%;
+    }
+    #noti4 {
+        width: 75%;
+    }
+    #noti5 {
+        width: 75%;
+    }
 }
+
