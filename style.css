@@ -977,8 +977,33 @@ hr.car {
     top: -100%;
 }
 
-.calendar-bottom{
+.calendar-bottom {
     display: flex;
+}
+
+#calendar-bottom-1 {
+    background: rgb(154, 154, 154);
+    color: rgba(115, 115, 115, 1);
+    border-radius: 5rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    position: absolute;
+    left: 10%;
+}
+
+#calendar-bottom-2 {
+    background: rgb(154, 154, 154);
+    color: rgb(75, 95, 133);
+    border-radius: 100%;
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    width: 3rem;
+    position: absolute;
+    right: 10%;
 }
 
 #calendar {
@@ -1490,6 +1515,10 @@ hr.car {
         align-self: center;
     }
 
+    #calendar-bottom-1 {
+        width: 10rem;
+        font-size: 0.75rem;
+    }
 }
 
 @media(width<=451px) {
@@ -1556,6 +1585,17 @@ hr.car {
 
     #pcbs-image img {
         height: 3rem;
+    }
+
+    #calendar-bottom-1 {
+        height: 2rem;
+        width: 5rem;
+        font-size: 0.5rem;
+    }
+
+    #calendar-bottom-2 {
+        width: 2.3rem;
+        font-size: 1.5rem;
     }
 
     #noti1 {
