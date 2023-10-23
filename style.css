@@ -847,16 +847,6 @@ hr.car {
     /* font-size: 1rem; */
 }
 
-#calendar-text{
-    background: rgb(154, 154, 154); 
-    color:rgba(115, 115, 115, 1); 
-    border-radius: 1rem; 
-    height: 3rem; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-}
-
 .transport-type-car {
     display: grid;
     grid-template-columns: auto auto;
@@ -976,6 +966,10 @@ hr.car {
     z-index: 3;
     transition: all .3s;
     top: -100%;
+}
+
+.calendar-bottom{
+    display: flex;
 }
 
 #calendar {
