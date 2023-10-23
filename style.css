@@ -1408,6 +1408,12 @@ hr.car {
 
     #transport-type {
         grid-template-columns: auto;
+        /* background-image: url("images/images/12_Light.png");
+        background-size: 30% 100%;
+        background-repeat: no-repeat;
+        background-position: left; */
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     #transport-type-car-contain-smog-1 {
@@ -1432,6 +1438,10 @@ hr.car {
 
     #transport-type-car-contain-smog-6 {
         transform: rotate(-90deg);
+    }
+
+    #transport-type-text {
+        display: none;
     }
 }
 
