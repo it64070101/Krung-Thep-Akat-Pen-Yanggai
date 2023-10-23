@@ -1624,3 +1624,109 @@ hr.car {
         width: 75%;
     }
 }
+
+/*---------------------------------------AQI---------------------------------------------*/
+
+
+.main-grid-aqi{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: auto;
+}
+.aqi-grid-pros{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(11, 5rem);
+    grid-auto-rows: auto;
+    height: 20rem;
+    margin-bottom: -25rem;
+}
+.blinking-text {
+    color: white;
+    position: relative;
+    z-index: 2;
+    animation: blink 1s infinite alternate; /* Blinking animation */
+    opacity: 1; /* Initially hide the elements */
+}
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+.animation_num_2{
+    animation: blink 1.5s infinite alternate; /* Blinking animation */
+}
+.animation_num_3{
+    animation: blink 1.25s infinite alternate; /* Blinking animation */
+}
+.animation_num_4{
+    animation: blink 2s infinite alternate; /* Blinking animation */
+}
+#blinking_1{
+    left: -14vw;
+    top: -5vh;
+}
+#blinking_2{
+    left: 7vh;
+    top: -4vh;
+}
+#blinking_3{
+    left: -15vw;
+}
+#blinking_4{
+    left: 9vh;
+    top: 4vh;
+}
+#blinking_5{
+    left: -15vw;
+    top: 5vh;
+}
+#blinking_6{
+    left: 9vh;
+    top: 9vh;
+}
+#blinking_7{
+    left: -10vw;
+    top: 5vh;
+}
+#blinking_8{
+    left: 7vw;
+    top: 10vh;
+}
+#blinking_9{
+    left: 5vw;
+    top: 9vh;
+}
+#blinking_10{
+    left: 7vw;
+    top: 10vh;
+}
+#blinking_11{
+    left: -9vw;
+    top: 27vh;
+}
+#blinking_12{
+    left: 7vw;
+    top: 27vh;
+}
+#blinking_13{
+    left: -8vw;
+    top: 34vh;
+}
+#blinking_14{
+    left: 11vw;
+    top: 36vh;
+}
+#blinking_15{
+    left: -8vw;
+    top: 50vh;
+}
+#blinking_16{
+    left: 9vw;
+    top: 54vh;
+}
