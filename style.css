@@ -847,6 +847,16 @@ hr.car {
     /* font-size: 1rem; */
 }
 
+#calendar-text{
+    background: rgb(154, 154, 154); 
+    color:rgba(115, 115, 115, 1); 
+    border-radius: 1rem; 
+    height: 3rem; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
 .transport-type-car {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -1269,6 +1279,7 @@ hr.car {
     #running-number-info-aqi {
         width: 80%;
     }
+    
 }
 
 @media(width<=768px) {
@@ -1460,6 +1471,7 @@ hr.car {
     .transport-type-car-contain img {
         align-self: center;
     }
+
 }
 
 @media(width<=451px) {
