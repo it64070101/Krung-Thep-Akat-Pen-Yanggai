@@ -884,26 +884,32 @@ hr.car {
 }
 
 #transport-type-car-contain-smog-1 {
+    --height: 30px;
     height: 30px;
 }
 
 #transport-type-car-contain-smog-2 {
+    --height: 60px;
     height: 60px;
 }
 
 #transport-type-car-contain-smog-3 {
+    --height: 80px;
     height: 80px;
 }
 
 #transport-type-car-contain-smog-4 {
+    --height: 110px;
     height: 110px;
 }
 
 #transport-type-car-contain-smog-5 {
+    --height: 200px;
     height: 200px;
 }
 
 #transport-type-car-contain-smog-6 {
+    --height: 240px;
     height: 240px;
 }
 
@@ -933,7 +939,7 @@ hr.car {
     grid-auto-rows: 10rem;
 }
 
-.receipt-overlay{
+.receipt-overlay {
     width: 800px;
     height: 800px;
     background-size: 50%;
@@ -956,7 +962,7 @@ hr.car {
     cursor: pointer;
 }
 
-.receipt-bg{
+.receipt-bg {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -1198,6 +1204,16 @@ hr.car {
     }
 }
 
+@keyframes smog-move {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: var(--height);
+    }
+}
+
 
 /* media ---------------------------------------------------------------------------------------------------- */
 
@@ -1395,6 +1411,34 @@ hr.car {
 
     #pcbs-image img {
         height: 5rem;
+    }
+
+    #transport-type {
+        grid-template-columns: auto;
+    }
+
+    #transport-type-car-contain-smog-1 {
+        transform: rotate(-90deg);
+    }
+
+    #transport-type-car-contain-smog-2 {
+        transform: rotate(-90deg);
+    }
+
+    #transport-type-car-contain-smog-3 {
+        transform: rotate(-90deg);
+    }
+
+    #transport-type-car-contain-smog-4 {
+        transform: rotate(-90deg);
+    }
+
+    #transport-type-car-contain-smog-5 {
+        transform: rotate(-90deg);
+    }
+
+    #transport-type-car-contain-smog-6 {
+        transform: rotate(-90deg);
     }
 }
 

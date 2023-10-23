@@ -44,6 +44,15 @@ function setBodyScrollPosition() {
     if (100 - (document.body.dataset.y / 100) >= 20) {
         document.querySelector('#background-2').style.setProperty('--light', document.body.dataset.y / 100)
     }
+    if (document.body.dataset.y >= 7930) {
+        console.log('right')
+        document.querySelector('#transport-type-car-contain-smog-1').style.setProperty('animation', 'smog-move 2s')
+        document.querySelector('#transport-type-car-contain-smog-2').style.setProperty('animation', 'smog-move 2s')
+        document.querySelector('#transport-type-car-contain-smog-3').style.setProperty('animation', 'smog-move 2s')
+        document.querySelector('#transport-type-car-contain-smog-4').style.setProperty('animation', 'smog-move 2s')
+        document.querySelector('#transport-type-car-contain-smog-5').style.setProperty('animation', 'smog-move 2s')
+        document.querySelector('#transport-type-car-contain-smog-6').style.setProperty('animation', 'smog-move 2s')
+    }
     if (document.body.getBoundingClientRect().width <= 460){
         if (document.getElementById("noti1").getBoundingClientRect().y <= 1000){
             document.querySelector('#noti1').style.setProperty('left', '16.5%')
@@ -77,7 +86,6 @@ function setBodyScrollPosition() {
             document.querySelector('#noti5').style.setProperty('left', '25%')
         }
     }
-    
 }
 
 function showPlacesOverlay(location_pin) {
