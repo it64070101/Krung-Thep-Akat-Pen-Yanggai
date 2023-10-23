@@ -913,16 +913,9 @@ hr.car {
     height: 240px;
 }
 
-#transport-type-car-contain-vei-1 {
-    height: 100px;
-}
-
-#transport-type-car-contain-vei-3 {
-    height: 150px;
-}
-
-#transport-type-car-contain-vei-6 {
-    height: 100px;
+.ttccv {
+    min-height: fit-content;
+    min-width: 100%;
 }
 
 #transport-tier-sect-text-below {
