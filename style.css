@@ -1286,6 +1286,10 @@ hr.car {
     #running-number-info-1 {
         padding: 0;
     }
+    
+    #graph-sect-top {
+        font-size: 1.5rem;
+    }
 
     #graph-sect-bottom-2-contain h1 {
         font-size: 2rem;
@@ -1509,6 +1513,10 @@ hr.car {
     #running-number-info-box {
         font-size: 1rem;
         border-radius: 1rem;
+    }
+
+    #graph-sect-top {
+        font-size: 1rem;
     }
 
     #pcbs-text-top {
