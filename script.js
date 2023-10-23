@@ -109,7 +109,7 @@ function showReceiptOverlay(receipt) {
     else {
         receipt_name = `images/images/` + receipt + ".png"
     }
-    document.querySelector('.receipt-overlay').style.setProperty('background-image', `url(${receipt_name})`)
+    document.getElementById("receipt-bg-img").src=receipt_name;
     document.querySelector('.receipt-bg').style.setProperty('top', '0%')
     document.querySelector('.receipt-bg').style.setProperty('background', '#000b')
     document.querySelector('body').style.overflowY = 'hidden';
