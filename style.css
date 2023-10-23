@@ -847,12 +847,13 @@ hr.car {
 
 .transport-type-car {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
 }
 
 .transport-type-car-contain {
     display: flex;
     height: 100%;
+    width: fit-content;
 }
 
 .transport-type-car-contain div {
@@ -915,7 +916,7 @@ hr.car {
 
 .ttccv {
     min-height: fit-content;
-    min-width: 100%;
+    /* min-width: 100%; */
 }
 
 #transport-tier-sect-text-below {
@@ -1005,37 +1006,41 @@ hr.car {
     align-items: start;
 }
 
-#notif-sect{
-    left:50%;
+#notif-sect {
+    left: 50%;
     transition: all 1s;
 }
 
-#noti1{
+#noti1 {
     position: relative;
     left: 100%;
     margin-bottom: 3.5%;
     width: 47.5%;
     transition: all 0.3s;
 }
-#noti2{
+
+#noti2 {
     position: relative;
     left: 100%;
     width: 50%;
     transition: all 0.3s;
 }
-#noti3{
+
+#noti3 {
     position: relative;
     left: 100%;
     width: 50%;
     transition: all 0.3s;
 }
-#noti4{
+
+#noti4 {
     position: relative;
     left: 100%;
     width: 50%;
     transition: all 0.3s;
 }
-#noti5{
+
+#noti5 {
     position: relative;
     left: 100%;
     width: 50%;
@@ -1416,6 +1421,7 @@ hr.car {
         margin-right: 1rem;
     }
 
+
     #transport-type-car-contain-smog-1 {
         transform: rotate(-90deg);
     }
@@ -1443,6 +1449,10 @@ hr.car {
     #transport-type-text {
         display: none;
     }
+
+    .transport-type-car-contain img {
+        align-self: center;
+    }
 }
 
 @media(width<=451px) {
@@ -1465,17 +1475,20 @@ hr.car {
     #noti1 {
         width: 72.25%;
     }
+
     #noti2 {
         width: 75%;
     }
+
     #noti3 {
         width: 75%;
     }
+
     #noti4 {
         width: 75%;
     }
+
     #noti5 {
         width: 75%;
     }
 }
-
