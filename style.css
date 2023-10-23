@@ -859,7 +859,7 @@ hr.car {
 
 .transport-type-car {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto auto;
 }
 
 .transport-type-car-contain {
@@ -928,7 +928,7 @@ hr.car {
 
 .ttccv {
     min-height: fit-content;
-    /* min-width: 100%; */
+    min-width: 100%;
 }
 
 #transport-tier-sect-text-below {
@@ -1443,6 +1443,9 @@ hr.car {
         margin-right: 1rem;
     }
 
+    .transport-type-car {
+        grid-template-columns: auto 1fr;
+    }
 
     #transport-type-car-contain-smog-1 {
         transform: rotate(-90deg);
