@@ -28,8 +28,8 @@ number = 0
 function setBodyScrollPosition() {
     document.body.dataset.y = window.scrollY
     document.body.dataset.h = window.innerHeight
-    if ((document.body.dataset.y * 10 - 7630) <= 11370) {
-
+    let screenWidth  = window.screen.width;
+    if ((document.body.dataset.y * 10 - 7630) <= 11370 && screenWidth >= 768) {
         document.querySelector('#increasing-num').innerHTML = (document.body.dataset.y * 10 - 7630).toLocaleString("en-US") + ",000"
     }
     else if (document.body.dataset.y > 1900) {
